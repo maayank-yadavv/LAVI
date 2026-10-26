@@ -898,23 +898,6 @@ h4,
   }
 }
 
-.vault-top-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.45rem 1.35rem;
-  border-radius: var(--radius-full);
-  background: rgba(22, 139, 255, 0.12);
-  border: 1px solid rgba(22, 139, 255, 0.45);
-  color: var(--color-ice-blue);
-  font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  margin-bottom: 1.4rem;
-  box-shadow: 0 0 15px rgba(22, 139, 255, 0.25);
-}
 
 /* Crowned Avatar */
 .crowned-avatar-wrapper {
