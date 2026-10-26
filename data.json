@@ -207,183 +207,198 @@
     "items": [
       {
         "id": 1,
-        "image": "photo/Sunshine%20Feels%20Like%20This.png",
-        "filename": "Sunshine Feels Like This.png",
+        "image": "photo/thumbs/Sunshine%20Feels%20Like%20This.webp",
+        "filename": "Sunshine Feels Like This.webp",
         "category": "cozy",
         "badge": "Radiance ☀️",
         "icon": "☀️",
         "title": "Sunshine Feels Like This",
         "quote": "“Her smile brings warmth that chases every trace of darkness away.”",
         "details": "The sheer warmth of an unforced smile. After 390 silent sunsets, this is the exact radiance that reminds me why our friendship matters so much.",
-        "rotation": "-2deg"
+        "rotation": "-2deg",
+        "fullImage": "photo/Sunshine%20Feels%20Like%20This.webp"
       },
       {
         "id": 2,
-        "image": "photo/Breezy%20Twilight%20Rooftop%20Portrait.png",
-        "filename": "Breezy Twilight Rooftop Portrait.png",
+        "image": "photo/thumbs/Breezy%20Twilight%20Rooftop%20Portrait.webp",
+        "filename": "Breezy Twilight Rooftop Portrait.webp",
         "category": "twilight",
         "badge": "Twilight Winds 🌆",
         "icon": "🌆",
         "title": "Breezy Twilight Rooftop",
         "quote": "“Standing high above the city quiet, where the cool breeze carries silent memories.”",
         "details": "Golden evening light touching the skyline while the wind plays with her hair. Quiet, serene, and infinitely calm.",
-        "rotation": "2deg"
+        "rotation": "2deg",
+        "fullImage": "photo/Breezy%20Twilight%20Rooftop%20Portrait.webp"
       },
       {
         "id": 3,
-        "image": "photo/Golden%20Hour%20Triptych%20Portrait.png",
-        "filename": "Golden Hour Triptych Portrait.png",
+        "image": "photo/thumbs/Golden%20Hour%20Triptych%20Portrait.webp",
+        "filename": "Golden Hour Triptych Portrait.webp",
         "category": "golden",
         "badge": "Golden Triptych 🌟",
         "icon": "🌟",
         "title": "The Golden Hour Triptych",
         "quote": "“Three frozen moments of laughter, every frame glowing like pure starlight.”",
         "details": "Three frames capturing spontaneous laughter and natural ease. A gentle reminder that happiness always returns.",
-        "rotation": "-1.5deg"
+        "rotation": "-1.5deg",
+        "fullImage": "photo/Golden%20Hour%20Triptych%20Portrait.webp"
       },
       {
         "id": 4,
-        "image": "photo/Cozy%20Late-Night%20Pillow%20Portrait.png",
-        "filename": "Cozy Late-Night Pillow Portrait.png",
+        "image": "photo/thumbs/Cozy%20Late-Night%20Pillow%20Portrait.webp",
+        "filename": "Cozy Late-Night Pillow Portrait.webp",
         "category": "cozy",
         "badge": "Midnight Laughs 💬",
         "icon": "💬",
         "title": "Cozy Late-Night Pillow Portrait",
         "quote": "“The playful, sleepy smiles that made 2 AM feel like the safest hour on earth.”",
         "details": "Resting against the pillow after hours of sharing jokes and unburdening heavy minds. Safe, simple, and true.",
-        "rotation": "1.5deg"
+        "rotation": "1.5deg",
+        "fullImage": "photo/Cozy%20Late-Night%20Pillow%20Portrait.webp"
       },
       {
         "id": 5,
-        "image": "photo/Dreamy%20Golden%20Saree%20Portrait.png",
-        "filename": "Dreamy Golden Saree Portrait.png",
+        "image": "photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp",
+        "filename": "Dreamy Golden Saree Portrait.webp",
         "category": "saree",
         "badge": "Golden Grace ✨",
         "icon": "✨",
         "title": "Dreamy Golden Saree",
         "quote": "“Elegance, gentleness, and an unspoken spark that outshines every shadow.”",
         "details": "Dressed in radiant gold, carrying effortless grace and poise. A portrait that belongs in the stars.",
-        "rotation": "-2deg"
+        "rotation": "-2deg",
+        "fullImage": "photo/Dreamy%20Golden%20Saree%20Portrait.webp"
       },
       {
         "id": 6,
-        "image": "photo/Twilight%20Rooftop%20Dupatta%20Portrait.png",
-        "filename": "Twilight Rooftop Dupatta Portrait.png",
+        "image": "photo/thumbs/Twilight%20Rooftop%20Dupatta%20Portrait.webp",
+        "filename": "Twilight Rooftop Dupatta Portrait.webp",
         "category": "twilight",
         "badge": "Quiet Peace 🕊️",
         "icon": "🕊️",
         "title": "Twilight Rooftop Dupatta",
         "quote": "“A soft dupatta dancing with the wind — peaceful, free, and unburdened.”",
         "details": "Looking over the city horizon as dusk deepens into electric blue. Unspoken thoughts carried away by the gentle breeze.",
-        "rotation": "2deg"
+        "rotation": "2deg",
+        "fullImage": "photo/Twilight%20Rooftop%20Dupatta%20Portrait.webp"
       },
       {
         "id": 7,
-        "image": "photo/Flashlit%20Traditional%20Portrait%20Diptych.png",
-        "filename": "Flashlit Traditional Portrait Diptych.png",
+        "image": "photo/thumbs/Flashlit%20Traditional%20Portrait%20Diptych.webp",
+        "filename": "Flashlit Traditional Portrait Diptych.webp",
         "category": "saree",
         "badge": "Enduring Bond ♾️",
         "icon": "♾️",
         "title": "Flashlit Traditional Diptych",
         "quote": "“Two views of a kindred spirit. Distance tested us, but we found our way back.”",
         "details": "Two complementary angles capturing poise, tradition, and radiant sparkle. Distance couldn't undo this connection.",
-        "rotation": "-1deg"
+        "rotation": "-1deg",
+        "fullImage": "photo/Flashlit%20Traditional%20Portrait%20Diptych.webp"
       },
       {
         "id": 8,
-        "image": "photo/Golden%20Lace%20Light%20Portrait.png",
-        "filename": "Golden Lace Light Portrait.png",
+        "image": "photo/thumbs/Golden%20Lace%20Light%20Portrait.webp",
+        "filename": "Golden Lace Light Portrait.webp",
         "category": "golden",
         "badge": "Morning Light 🕯️",
         "icon": "🕯️",
         "title": "Golden Lace Light",
         "quote": "“Delicate patterns of sunbeams breaking through, proving the storm has passed.”",
         "details": "Sunbeams tracing soft lace patterns, symbolizing the quiet hope that kept glowing through 390 days of silence.",
-        "rotation": "1deg"
+        "rotation": "1deg",
+        "fullImage": "photo/Golden%20Lace%20Light%20Portrait.webp"
       },
       {
         "id": 9,
-        "image": "photo/Dreamy%20Rooftop%20Twilight%20Portrait.png",
-        "filename": "Dreamy Rooftop Twilight Portrait.png",
+        "image": "photo/thumbs/Dreamy%20Rooftop%20Twilight%20Portrait.webp",
+        "filename": "Dreamy Rooftop Twilight Portrait.webp",
         "category": "twilight",
         "badge": "Deep Thoughts 🌙",
         "icon": "🌙",
         "title": "Dreamy Rooftop Twilight",
         "quote": "“Looking out at the dusk horizon, wondering if time would bring our friendship back.”",
         "details": "Evening reflections overlooking the quiet city lights. A quiet moment where memories spoke louder than words.",
-        "rotation": "-2deg"
+        "rotation": "-2deg",
+        "fullImage": "photo/Dreamy%20Rooftop%20Twilight%20Portrait.webp"
       },
       {
         "id": 10,
-        "image": "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png",
-        "filename": "Serene Portrait in Maroon and Gold.png",
+        "image": "photo/thumbs/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp",
+        "filename": "Serene Portrait in Maroon and Gold.webp",
         "category": "saree",
         "badge": "Pure Royalty 👑",
         "icon": "👑",
         "title": "Serene Maroon & Gold",
         "quote": "“Carrying quiet strength and royal grace through every heavy chapter.”",
         "details": "Draped in deep maroon and antique gold, displaying strength and gentle dignity that inspires everyone around her.",
-        "rotation": "2deg"
+        "rotation": "2deg",
+        "fullImage": "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp"
       },
       {
         "id": 11,
-        "image": "photo/Golden-Hour%20Lavender%20Portraits.png",
-        "filename": "Golden-Hour Lavender Portraits.png",
+        "image": "photo/thumbs/Golden-Hour%20Lavender%20Portraits.webp",
+        "filename": "Golden-Hour Lavender Portraits.webp",
         "category": "golden",
         "badge": "Lavender Sunset 💜",
         "icon": "💜",
         "title": "Golden-Hour Lavender Dreams",
         "quote": "“Soft floral hues and evening warmth, a sanctuary for a tired heart.”",
         "details": "Warm twilight filtered through lavender blossoms. Calming, restorative, and filled with quiet grace.",
-        "rotation": "-1.5deg"
+        "rotation": "-1.5deg",
+        "fullImage": "photo/Golden-Hour%20Lavender%20Portraits.webp"
       },
       {
         "id": 12,
-        "image": "photo/Golden-Hour%20Countryside%20Portrait.png",
-        "filename": "Golden-Hour Countryside Portrait.png",
+        "image": "photo/thumbs/Golden-Hour%20Countryside%20Portrait.webp",
+        "filename": "Golden-Hour Countryside Portrait.webp",
         "category": "golden",
         "badge": "Open Skies 🌾",
         "icon": "🌾",
         "title": "Countryside Golden Hour",
         "quote": "“Clear paths ahead, leaving behind the weight of yesterday.”",
         "details": "Open fields and golden sunlight, stepping into a brighter tomorrow without the heavy shadows of the past.",
-        "rotation": "1.5deg"
+        "rotation": "1.5deg",
+        "fullImage": "photo/Golden-Hour%20Countryside%20Portrait.webp"
       },
       {
         "id": 13,
-        "image": "photo/Traditional%20Saree%20Selfie%20Collage.png",
-        "filename": "Traditional Saree Selfie Collage.png",
+        "image": "photo/thumbs/Traditional%20Saree%20Selfie%20Collage.webp",
+        "filename": "Traditional Saree Selfie Collage.webp",
         "category": "cozy",
         "badge": "Shared Laughter 🧸",
         "icon": "🧸",
         "title": "Traditional Saree Selfie Collage",
         "quote": "“Four distinct expressions of joy — because being silly is where our best memories live.”",
         "details": "Four fun, candid selfie panels showing funny faces, sweet smiles, and genuine silliness that makes friendship real.",
-        "rotation": "-2deg"
+        "rotation": "-2deg",
+        "fullImage": "photo/Traditional%20Saree%20Selfie%20Collage.webp"
       },
       {
         "id": 14,
-        "image": "photo/Twilight%20Rooftop%20Portrait%20Triptych.png",
-        "filename": "Twilight Rooftop Portrait Triptych.png",
+        "image": "photo/thumbs/Twilight%20Rooftop%20Portrait%20Triptych.webp",
+        "filename": "Twilight Rooftop Portrait Triptych.webp",
         "category": "twilight",
         "badge": "Twilight Trilogy 🌃",
         "icon": "🌃",
         "title": "Twilight Rooftop Triptych",
         "quote": "“Watching the city lights turn on, holding onto the hope that we would talk again.”",
         "details": "A three-part progression of quiet moments on the rooftop as night gently fell across the skyline.",
-        "rotation": "2deg"
+        "rotation": "2deg",
+        "fullImage": "photo/Twilight%20Rooftop%20Portrait%20Triptych.webp"
       },
       {
         "id": 15,
-        "image": "photo/Warm%20Wavy-Mirror%20Sari%20Selfie.png",
-        "filename": "Warm Wavy-Mirror Sari Selfie.png",
+        "image": "photo/thumbs/Warm%20Wavy-Mirror%20Sari%20Selfie.webp",
+        "filename": "Warm Wavy-Mirror Sari Selfie.webp",
         "category": "saree",
         "badge": "Aesthetic Reflection 🪞",
         "icon": "🪞",
         "title": "Warm Wavy-Mirror Reflection",
         "quote": "“Reflecting back on 390 days of silence, and knowing our bond is stronger than ever.”",
         "details": "A creative, aesthetic mirror selfie framed by warm tones and soft waves. Looking at the reflection of resilience.",
-        "rotation": "-1deg"
+        "rotation": "-1deg",
+        "fullImage": "photo/Warm%20Wavy-Mirror%20Sari%20Selfie.webp"
       }
     ]
   },

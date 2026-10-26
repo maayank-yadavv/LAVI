@@ -29,42 +29,41 @@
   <meta name="twitter:title" content="The Day We Found Our Way Back 🖤💙♾️">
   <meta name="twitter:description" content="Hello Depression Buddy, finally you are back here 💙">
 
-  <!-- Google Fonts: Cormorant Garamond, Plus Jakarta Sans, Playfair Display, JetBrains Mono -->
+  <!-- High-Priority Responsive Preloads for LCP Hero Image -->
+  <link rel="preload" as="image" href="photo/Dreamy%20Rooftop%20Twilight%20Portrait-mobile.webp" type="image/webp" media="(max-width: 640px)" fetchpriority="high">
+  <link rel="preload" as="image" href="photo/Dreamy%20Rooftop%20Twilight%20Portrait.webp" type="image/webp" media="(min-width: 641px)" fetchpriority="high">
+
+  <!-- Preconnect to Font Origins -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@400;500;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
 
-  <!-- Tailwind CSS CDN for Helper Layout Utilities -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            midnight: '#040814',
-            deepNavy: '#07152b',
-            navyCard: '#0b1e3d',
-            electricBlue: '#168bff',
-            royalBlue: '#1d4ed8',
-            iceBlue: '#b5deff',
-            softWhite: '#f3f7ff'
-          },
-          fontFamily: {
-            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
-            display: ['"Playfair Display"', 'serif'],
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace']
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Non-Render-Blocking Google Fonts with display=swap -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap">
+  </noscript>
 
-  <!-- Dedicated Custom Luxury Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <!-- High-Priority Stylesheet Preload & Link -->
+  <link rel="preload" as="style" href="app.min.css">
+  <link rel="stylesheet" href="app.min.css">
+
+  <!-- Inlined Critical Above-the-Fold Rules for Instant FCP -->
+  <style>
+    :root{--bg:#040814;--ice:#b5deff;--electric:#168bff;--soft:#f3f7ff;--navy:#07152b}
+    body{background-color:#040814;color:#f3f7ff;margin:0;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden}
+    .chapter-page{display:none}
+    .chapter-page.active{display:block}
+    #universe-stars-canvas{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none}
+    .ambient-orb{position:fixed;border-radius:9999px;filter:blur(80px);opacity:.22;pointer-events:none;z-index:0}
+    .ambient-orb-1{top:-10%;left:-10%;width:50vw;height:50vw;background:radial-gradient(circle,#168bff,#1d4ed8)}
+    .ambient-orb-2{top:40%;right:-10%;width:45vw;height:45vw;background:radial-gradient(circle,#0ea5e9,#0369a1)}
+    .ambient-orb-3{bottom:-10%;left:20%;width:55vw;height:55vw;background:radial-gradient(circle,#1e40af,#040814)}
+    .pill-badge{display:inline-flex;align-items:center;gap:.5rem;padding:.375rem 1rem;border-radius:9999px;background:rgba(7,21,43,.85);border:1px solid rgba(22,139,255,.35);font-size:.75rem;font-family:'JetBrains Mono',monospace;letter-spacing:.05em;color:#b5deff}
+    .celestial-moon-badge{position:relative;display:inline-flex;align-items:center;justify-content:center;margin-bottom:1.25rem}
+    .moon-disc{width:3.5rem;height:3.5rem;border-radius:9999px;background:radial-gradient(circle at 35% 35%,#e0f2fe,#38bdf8 60%,#0369a1 100%);box-shadow:0 0 25px rgba(56,189,248,.6),inset -3px -3px 8px rgba(3,105,161,.7);display:flex;align-items:center;justify-content:center;font-size:1.5rem}
+    .moon-heart-badge{position:absolute;bottom:-.25rem;right:-.25rem;background:#07152b;border:2px solid #168bff;border-radius:9999px;padding:.15rem .35rem;font-size:.75rem}
+  </style>
 </head>
 
 <body
@@ -140,7 +139,16 @@
         <div class="absolute -inset-1.5 bg-gradient-to-r from-electricBlue via-cyan-400 to-royalBlue rounded-3xl blur-md opacity-50 group-hover:opacity-90 transition duration-700 animate-pulse"></div>
         <div class="relative bg-deepNavy/90 border border-electricBlue/40 rounded-3xl p-3 sm:p-4 text-center shadow-2xl overflow-hidden">
           <div class="aspect-[4/5] sm:aspect-square w-full rounded-2xl overflow-hidden mb-3 border border-iceBlue/20 shadow-inner bg-midnight">
-            <img src="photo/Dreamy%20Rooftop%20Twilight%20Portrait.png" alt="Lavi • Sunshine Feels Like This" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" loading="eager">
+            <picture>
+              <source srcset="photo/Dreamy%20Rooftop%20Twilight%20Portrait-mobile.webp" media="(max-width: 640px)" type="image/webp">
+              <source srcset="photo/Dreamy%20Rooftop%20Twilight%20Portrait.webp" type="image/webp">
+              <img src="photo/Dreamy%20Rooftop%20Twilight%20Portrait.webp"
+                   alt="Lavi • Sunshine Feels Like This"
+                   width="480" height="600"
+                   fetchpriority="high"
+                   decoding="async"
+                   class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700">
+            </picture>
           </div>
           <div class="flex items-center justify-between text-xs text-iceBlue/80 font-mono px-1">
             <span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>Lavi • Guiding Star</span>
@@ -259,7 +267,7 @@
           <div class="crown-badge">👑</div>
           <div class="avatar-ring">
             <div class="avatar-inner">
-              <img src="photo/Golden%20Lace%20Light%20Portrait.png" alt="Lavi • Crowned Guiding Star" class="w-full h-full object-cover">
+              <img src="photo/thumbs/Golden%20Lace%20Light%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi • Crowned Guiding Star" class="w-full h-full object-cover">
             </div>
             <div class="avatar-lock-badge">
               <span>🔒</span>
@@ -430,7 +438,7 @@
       <!-- Arcade Cameo Pill Banner -->
       <div class="inline-flex items-center gap-3.5 px-5 py-2.5 rounded-full bg-deepNavy/90 border border-electricBlue/40 shadow-xl mb-3">
         <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-cyan-400 shrink-0 shadow-[0_0_15px_rgba(56,189,248,0.5)]">
-          <img src="photo/Dreamy%20Golden%20Saree%20Portrait.png" alt="Lavi • Golden Grace" class="w-full h-full object-cover">
+          <img src="photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp" alt="Lavi • Golden Grace" width="48" height="48" loading="lazy" decoding="async" class="w-full h-full object-cover">
         </div>
         <div class="text-left">
           <span class="text-xs sm:text-sm font-serif text-softWhite block leading-tight">
@@ -465,7 +473,7 @@
           <div class="ttt-scoreboard flex flex-wrap items-center justify-center gap-2.5 sm:gap-4 my-2">
             <div class="ttt-score-pill flex items-center gap-2.5 px-4 py-2 rounded-full bg-deepNavy/85 border border-cyan-400/40 shadow-md">
               <div class="w-10 h-10 rounded-full overflow-hidden border-2 border-cyan-400 shrink-0 shadow-[0_0_10px_rgba(56,189,248,0.5)]">
-                <img src="photo/Cozy%20Late-Night%20Pillow%20Portrait.png" alt="Lavi • Midnight Smile" class="w-full h-full object-cover">
+                <img src="photo/thumbs/Cozy%20Late-Night%20Pillow%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi • Midnight Smile" class="w-full h-full object-cover">
               </div>
               <span class="text-xs text-softWhite font-medium">Lavi 💙:</span>
               <strong id="ttt-score-lavi" class="text-cyan-300 font-bold text-sm">0</strong>
@@ -1028,7 +1036,7 @@
             <div class="bg-white/95 rounded-xl p-1 sm:p-1.5 shadow-[0_8px_25px_rgba(0,0,0,0.65)] border-2 border-dashed border-electricBlue flex flex-col items-center">
               <!-- Square Photo Frame -->
               <div class="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 aspect-square rounded-lg overflow-hidden border border-cyan-400 bg-deepNavy relative shadow-inner">
-                <img id="envelope-stamp-photo" src="photo/Dreamy%20Golden%20Saree%20Portrait.png" alt="Stamp Portrait Frame" class="w-full h-full object-cover">
+                <img id="envelope-stamp-photo" src="photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp" alt="Stamp Portrait Frame" width="120" height="120" loading="lazy" decoding="async" class="w-full h-full object-cover">
                 <div class="absolute inset-0 ring-1 ring-inset ring-white/40 rounded-lg pointer-events-none"></div>
               </div>
               <!-- Stamp Text Badge -->
@@ -1061,7 +1069,7 @@
             <div class="bg-white/95 backdrop-blur-md rounded-2xl p-2 sm:p-2.5 shadow-[0_10px_25px_rgba(0,0,0,0.65)] border border-cyan-300/60 flex items-center gap-2 sm:gap-2.5 transition-transform duration-300 hover:scale-105">
               <!-- Small Circular Avatar Photo -->
               <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-electricBlue shrink-0 shadow-md">
-                <img src="photo/Sunshine%20Feels%20Like%20This.png" alt="Lavi Avatar" class="w-full h-full object-cover">
+                <img src="photo/thumbs/Sunshine%20Feels%20Like%20This.webp" alt="Lavi Avatar" width="64" height="64" loading="lazy" decoding="async" class="w-full h-full object-cover">
               </div>
               <!-- Recipient Text Details -->
               <div class="text-left font-sans leading-tight">
@@ -1265,7 +1273,7 @@
           <!-- SQUARE KEEPSAKE PHOTO 1 -->
           <div class="my-6 p-4 sm:p-5 rounded-2xl letter-square-keepsake flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div class="letter-square-frame w-28 h-28 sm:w-36 sm:h-36 shrink-0">
-              <img src="photo/Dreamy%20Golden%20Saree%20Portrait.png" alt="Lavi • Preserved Memory" loading="lazy">
+              <img src="photo/Dreamy%20Golden%20Saree%20Portrait.webp" alt="Lavi • Preserved Memory" width="500" height="600" loading="lazy" decoding="async">
             </div>
             <div class="text-left">
               <span class="text-[11px] font-mono text-cyan-300 uppercase tracking-wider block mb-1">Keepsake • Preserved Memory 📸</span>
@@ -1355,7 +1363,7 @@
           <!-- SQUARE KEEPSAKE PHOTO 2 -->
           <div class="my-6 p-4 sm:p-5 rounded-2xl letter-square-keepsake flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div class="letter-square-frame w-28 h-28 sm:w-36 sm:h-36 shrink-0">
-              <img src="photo/Warm%20Wavy-Mirror%20Sari%20Selfie.png" alt="Lavi • Remembering Your Journey" loading="lazy">
+              <img src="photo/Warm%20Wavy-Mirror%20Sari%20Selfie.webp" alt="Lavi • Remembering Your Journey" width="500" height="600" loading="lazy" decoding="async">
             </div>
             <div class="text-left">
               <span class="text-[11px] font-mono text-cyan-300 uppercase tracking-wider block mb-1">Keepsake • Gurgaon & Noida Days 🏙️</span>
@@ -1615,7 +1623,7 @@
           <!-- SQUARE KEEPSAKE PHOTO 3 -->
           <div class="my-6 p-4 sm:p-5 rounded-2xl letter-square-keepsake flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div class="letter-square-frame w-28 h-28 sm:w-36 sm:h-36 shrink-0">
-              <img src="photo/Cozy%20Late-Night%20Pillow%20Portrait.png" alt="2 AM Reels & Midnight Laughs" loading="lazy">
+              <img src="photo/Cozy%20Late-Night%20Pillow%20Portrait.webp" alt="2 AM Reels & Midnight Laughs" width="500" height="600" loading="lazy" decoding="async">
             </div>
             <div class="text-left">
               <span class="text-[11px] font-mono text-cyan-300 uppercase tracking-wider block mb-1">Keepsake • That Legendary 2 AM Night 🤣</span>
@@ -1746,7 +1754,7 @@
           <!-- SQUARE KEEPSAKE PHOTO 4 -->
           <div class="my-6 p-4 sm:p-5 rounded-2xl letter-square-keepsake flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div class="letter-square-frame w-28 h-28 sm:w-36 sm:h-36 shrink-0">
-              <img src="photo/Twilight%20Rooftop%20Dupatta%20Portrait.png" alt="Lavi • A New Beginning" loading="lazy">
+              <img src="photo/Twilight%20Rooftop%20Dupatta%20Portrait.webp" alt="Lavi • A New Beginning" width="500" height="600" loading="lazy" decoding="async">
             </div>
             <div class="text-left">
               <span class="text-[11px] font-mono text-cyan-300 uppercase tracking-wider block mb-1">Keepsake • Efforts Ka Phal 🌷🤍</span>
@@ -1977,7 +1985,7 @@
           <!-- SQUARE KEEPSAKE PHOTO 5 -->
           <div class="my-6 p-4 sm:p-5 rounded-2xl letter-square-keepsake flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
             <div class="letter-square-frame w-28 h-28 sm:w-36 sm:h-36 shrink-0">
-              <img src="photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png" alt="Lavi • Cherished Bond" loading="lazy">
+              <img src="photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp" alt="Lavi • Cherished Bond" width="500" height="600" loading="lazy" decoding="async">
             </div>
             <div class="text-left">
               <span class="text-[11px] font-mono text-cyan-300 uppercase tracking-wider block mb-1">Keepsake • The Person Behind The Memories 💌</span>
@@ -2304,7 +2312,7 @@
       <div class="polaroid-card transform -rotate-2" data-category="cozy" onclick="openPhotoModal(1)">
         <div class="washi-tape-strip rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Sunshine%20Feels%20Like%20This.png" alt="Sunshine Feels Like This" loading="lazy">
+          <img src="photo/thumbs/Sunshine%20Feels%20Like%20This.webp" loading="lazy" decoding="async" width="400" height="500" alt="Sunshine Feels Like This" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 01/15</span>
           </div>
@@ -2323,7 +2331,7 @@
       <div class="polaroid-card transform rotate-2" data-category="twilight" onclick="openPhotoModal(2)">
         <div class="washi-tape-strip -rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Breezy%20Twilight%20Rooftop%20Portrait.png" alt="Breezy Twilight Rooftop" loading="lazy">
+          <img src="photo/thumbs/Breezy%20Twilight%20Rooftop%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Breezy Twilight Rooftop" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 02/15</span>
           </div>
@@ -2342,7 +2350,7 @@
       <div class="polaroid-card transform -rotate-1" data-category="golden" onclick="openPhotoModal(3)">
         <div class="washi-tape-strip rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Golden%20Hour%20Triptych%20Portrait.png" alt="The Golden Hour Triptych" loading="lazy">
+          <img src="photo/thumbs/Golden%20Hour%20Triptych%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="The Golden Hour Triptych" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 03/15</span>
           </div>
@@ -2361,7 +2369,7 @@
       <div class="polaroid-card transform rotate-1" data-category="cozy" onclick="openPhotoModal(4)">
         <div class="washi-tape-strip -rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Cozy%20Late-Night%20Pillow%20Portrait.png" alt="Cozy Late-Night Pillow Portrait" loading="lazy">
+          <img src="photo/thumbs/Cozy%20Late-Night%20Pillow%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Cozy Late-Night Pillow Portrait" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 04/15</span>
           </div>
@@ -2380,7 +2388,7 @@
       <div class="polaroid-card transform -rotate-2" data-category="saree" onclick="openPhotoModal(5)">
         <div class="washi-tape-strip rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Dreamy%20Golden%20Saree%20Portrait.png" alt="Dreamy Golden Saree" loading="lazy">
+          <img src="photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Dreamy Golden Saree" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 05/15</span>
           </div>
@@ -2399,7 +2407,7 @@
       <div class="polaroid-card transform rotate-2" data-category="twilight" onclick="openPhotoModal(6)">
         <div class="washi-tape-strip -rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Twilight%20Rooftop%20Dupatta%20Portrait.png" alt="Twilight Rooftop Dupatta" loading="lazy">
+          <img src="photo/thumbs/Twilight%20Rooftop%20Dupatta%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Twilight Rooftop Dupatta" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 06/15</span>
           </div>
@@ -2418,7 +2426,7 @@
       <div class="polaroid-card transform -rotate-1" data-category="saree" onclick="openPhotoModal(7)">
         <div class="washi-tape-strip rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Flashlit%20Traditional%20Portrait%20Diptych.png" alt="Flashlit Traditional Diptych" loading="lazy">
+          <img src="photo/thumbs/Flashlit%20Traditional%20Portrait%20Diptych.webp" loading="lazy" decoding="async" width="400" height="500" alt="Flashlit Traditional Diptych" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 07/15</span>
           </div>
@@ -2437,7 +2445,7 @@
       <div class="polaroid-card transform rotate-1" data-category="golden" onclick="openPhotoModal(8)">
         <div class="washi-tape-strip -rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Golden%20Lace%20Light%20Portrait.png" alt="Golden Lace Light" loading="lazy">
+          <img src="photo/thumbs/Golden%20Lace%20Light%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Golden Lace Light" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 08/15</span>
           </div>
@@ -2456,7 +2464,7 @@
       <div class="polaroid-card transform -rotate-2" data-category="twilight" onclick="openPhotoModal(9)">
         <div class="washi-tape-strip rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Dreamy%20Rooftop%20Twilight%20Portrait.png" alt="Dreamy Rooftop Twilight" loading="lazy">
+          <img src="photo/thumbs/Dreamy%20Rooftop%20Twilight%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Dreamy Rooftop Twilight" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 09/15</span>
           </div>
@@ -2475,7 +2483,7 @@
       <div class="polaroid-card transform rotate-2" data-category="saree" onclick="openPhotoModal(10)">
         <div class="washi-tape-strip -rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png" alt="Serene Maroon & Gold" loading="lazy">
+          <img src="photo/thumbs/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp" loading="lazy" decoding="async" width="400" height="500" alt="Serene Maroon & Gold" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 10/15</span>
           </div>
@@ -2494,7 +2502,7 @@
       <div class="polaroid-card transform -rotate-1" data-category="golden" onclick="openPhotoModal(11)">
         <div class="washi-tape-strip rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Golden-Hour%20Lavender%20Portraits.png" alt="Golden-Hour Lavender Dreams" loading="lazy">
+          <img src="photo/thumbs/Golden-Hour%20Lavender%20Portraits.webp" loading="lazy" decoding="async" width="400" height="500" alt="Golden-Hour Lavender Dreams" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 11/15</span>
           </div>
@@ -2513,7 +2521,7 @@
       <div class="polaroid-card transform rotate-1" data-category="golden" onclick="openPhotoModal(12)">
         <div class="washi-tape-strip -rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Golden-Hour%20Countryside%20Portrait.png" alt="Countryside Golden Hour" loading="lazy">
+          <img src="photo/thumbs/Golden-Hour%20Countryside%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Countryside Golden Hour" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 12/15</span>
           </div>
@@ -2532,7 +2540,7 @@
       <div class="polaroid-card transform -rotate-2" data-category="cozy" onclick="openPhotoModal(13)">
         <div class="washi-tape-strip rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Traditional%20Saree%20Selfie%20Collage.png" alt="Traditional Saree Selfie Collage" loading="lazy">
+          <img src="photo/thumbs/Traditional%20Saree%20Selfie%20Collage.webp" loading="lazy" decoding="async" width="400" height="500" alt="Traditional Saree Selfie Collage" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 13/15</span>
           </div>
@@ -2551,7 +2559,7 @@
       <div class="polaroid-card transform rotate-2" data-category="twilight" onclick="openPhotoModal(14)">
         <div class="washi-tape-strip -rotate-2"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Twilight%20Rooftop%20Portrait%20Triptych.png" alt="Twilight Rooftop Triptych" loading="lazy">
+          <img src="photo/thumbs/Twilight%20Rooftop%20Portrait%20Triptych.webp" loading="lazy" decoding="async" width="400" height="500" alt="Twilight Rooftop Triptych" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 14/15</span>
           </div>
@@ -2570,7 +2578,7 @@
       <div class="polaroid-card transform -rotate-1" data-category="saree" onclick="openPhotoModal(15)">
         <div class="washi-tape-strip rotate-1"></div>
         <div class="polaroid-img-frame">
-          <img src="photo/Warm%20Wavy-Mirror%20Sari%20Selfie.png" alt="Warm Wavy-Mirror Reflection" loading="lazy">
+          <img src="photo/thumbs/Warm%20Wavy-Mirror%20Sari%20Selfie.webp" loading="lazy" decoding="async" width="400" height="500" alt="Warm Wavy-Mirror Reflection" loading="lazy">
           <div class="absolute inset-0 bg-gradient-to-t from-deepNavy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2.5">
             <span class="text-[11px] font-mono text-cyan-300">🔍 Click to inspect &bull; 15/15</span>
           </div>
@@ -2656,7 +2664,7 @@
           <!-- VAULT CHERISHED KEEPSAKE PORTRAIT -->
           <div class="my-6 p-4 rounded-2xl bg-deepNavy/90 border border-cyan-400/50 shadow-[0_0_30px_rgba(22,139,255,0.3)] flex flex-col sm:flex-row items-center gap-5">
             <div class="w-32 h-44 sm:w-36 sm:h-48 rounded-xl overflow-hidden shrink-0 border-2 border-electricBlue shadow-lg bg-midnight">
-              <img src="photo/Golden-Hour%20Lavender%20Portraits.png" alt="Lavi • Cherished Memory" class="w-full h-full object-cover">
+              <img src="photo/thumbs/Golden-Hour%20Lavender%20Portraits.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi • Cherished Memory" class="w-full h-full object-cover">
             </div>
             <div class="text-left">
               <span class="text-xs font-mono text-cyan-300 uppercase tracking-widest block mb-1">🗝️ The Secret Vault Keepsake</span>
@@ -2749,7 +2757,7 @@
 
       <!-- Lightbox Image Wrapper -->
       <div class="lightbox-img-wrapper relative group">
-        <img id="zoom-modal-img" src="photo/Sunshine%20Feels%20Like%20This.png" alt="Lavi Memory" class="select-none">
+        <img id="zoom-modal-img" src="photo/thumbs/Sunshine%20Feels%20Like%20This.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi Memory" class="select-none">
       </div>
 
       <!-- Metadata & Info -->
@@ -3126,15 +3134,18 @@
       starCanvas.width = window.innerWidth;
       starCanvas.height = window.innerHeight;
       stars = [];
-      const count = Math.floor((starCanvas.width * starCanvas.height) / 5200);
+      // Mobile-friendly star count to prevent main thread/GPU battery drain
+      const isMobile = window.innerWidth < 768;
+      const divisor = isMobile ? 9000 : 5500;
+      const count = Math.min(isMobile ? 70 : 130, Math.floor((starCanvas.width * starCanvas.height) / divisor));
       for (let i = 0; i < count; i++) {
         stars.push({
           x: Math.random() * starCanvas.width,
           y: Math.random() * starCanvas.height,
-          radius: Math.random() * 1.5 + 0.3,
-          alpha: Math.random() * 0.8 + 0.2,
-          speed: Math.random() * 0.02 + 0.005,
-          color: Math.random() > 0.3 ? '#168bff' : '#b5deff'
+          radius: Math.random() * 1.4 + 0.3,
+          alpha: Math.random() * 0.7 + 0.3,
+          speed: Math.random() * 0.015 + 0.005,
+          color: Math.random() > 0.35 ? '#168bff' : '#b5deff'
         });
       }
     }
@@ -3156,20 +3167,25 @@
     }
 
     function renderStarfield() {
+      if (document.hidden) {
+        requestAnimationFrame(renderStarfield);
+        return;
+      }
       sCtx.clearRect(0, 0, starCanvas.width, starCanvas.height);
 
-      // Render twinkling stars
-      stars.forEach(star => {
-        star.alpha += Math.sin(Date.now() * star.speed) * 0.01;
+      // Render twinkling stars (fast batch rendering without per-star save/restore)
+      const now = Date.now();
+      for (let i = 0; i < stars.length; i++) {
+        const star = stars[i];
+        star.alpha += Math.sin(now * star.speed) * 0.01;
         const currentAlpha = Math.max(0.1, Math.min(0.9, star.alpha));
-        sCtx.save();
         sCtx.globalAlpha = currentAlpha;
         sCtx.fillStyle = star.color;
         sCtx.beginPath();
         sCtx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
         sCtx.fill();
-        sCtx.restore();
-      });
+      }
+      sCtx.globalAlpha = 1;
 
       // Render cosmic shooting stars
       maybeSpawnShootingStar();
@@ -3207,7 +3223,7 @@
       requestAnimationFrame(renderStarfield);
     }
 
-    window.addEventListener("resize", resizeStarCanvas);
+    window.addEventListener("resize", resizeStarCanvas, { passive: true });
     resizeStarCanvas();
     renderStarfield();
 
@@ -4339,7 +4355,7 @@
               wordDiscoveryQuote.innerHTML = `
                 <div class="flex items-center gap-3 text-left w-full justify-center">
                   <div class="w-10 h-10 rounded-full overflow-hidden border border-cyan-400 shrink-0 shadow-[0_0_8px_rgba(56,189,248,0.5)]">
-                    <img src="photo/Sunshine%20Feels%20Like%20This.png" alt="Lavi" class="w-full h-full object-cover" />
+                    <img src="photo/thumbs/Sunshine%20Feels%20Like%20This.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi" class="w-full h-full object-cover" />
                   </div>
                   <div>
                     <span class="text-xs text-cyan-200 font-serif leading-tight block">${wordMeanings[w]}</span>
@@ -4461,7 +4477,7 @@
           balloonThoughtBox.innerHTML = `
             <div class="flex items-center gap-3 text-left w-full justify-center">
               <div class="w-10 h-10 rounded-full overflow-hidden border border-cyan-400 shrink-0 shadow-[0_0_8px_rgba(56,189,248,0.5)]">
-                <img src="photo/Breezy%20Twilight%20Rooftop%20Portrait.png" alt="Lavi" class="w-full h-full object-cover" />
+                <img src="photo/thumbs/Breezy%20Twilight%20Rooftop%20Portrait.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi" class="w-full h-full object-cover" />
               </div>
               <p class="text-xs sm:text-sm font-serif italic text-iceBlue leading-snug">${thought}</p>
             </div>
@@ -4653,7 +4669,7 @@
             revealEl.innerHTML = `
               <div class="flex flex-col sm:flex-row items-center gap-4 text-left p-2">
                 <div class="relative shrink-0">
-                  <img src="photo/Sunshine%20Feels%20Like%20This.png" alt="Lavi Golden Keepsake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-2 border-amber-300 shadow-[0_0_20px_rgba(251,191,36,0.6)]" />
+                  <img src="photo/thumbs/Sunshine%20Feels%20Like%20This.webp" loading="lazy" decoding="async" width="400" height="500" alt="Lavi Golden Keepsake" class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl object-cover border-2 border-amber-300 shadow-[0_0_20px_rgba(251,191,36,0.6)]" />
                   <div class="absolute -bottom-1 -right-1 bg-amber-400 text-midnight text-[10px] font-bold px-1.5 py-0.5 rounded-full font-mono">GOLD 🏆</div>
                 </div>
                 <div>
@@ -4720,16 +4736,16 @@
     // GAME 6: MEMORY MATCH (20 CARDS) 🎴 - CRYSTAL-CLEAR PHOTO EDITION
     // =========================================================================
     const memoryPhotos10 = [
-      { id: "photo1", title: "Sunshine Smile", file: "photo/Sunshine%20Feels%20Like%20This.png" },
-      { id: "photo2", title: "Golden Saree", file: "photo/Dreamy%20Golden%20Saree%20Portrait.png" },
-      { id: "photo3", title: "Midnight Comfort", file: "photo/Cozy%20Late-Night%20Pillow%20Portrait.png" },
-      { id: "photo4", title: "Twilight Breeze", file: "photo/Breezy%20Twilight%20Rooftop%20Portrait.png" },
-      { id: "photo5", title: "Golden Hour Glow", file: "photo/Golden%20Hour%20Triptych%20Portrait.png" },
-      { id: "photo6", title: "Rooftop Starlight", file: "photo/Twilight%20Rooftop%20Dupatta%20Portrait.png" },
-      { id: "photo7", title: "Radiant Tradition", file: "photo/Flashlit%20Traditional%20Portrait%20Diptych.png" },
-      { id: "photo8", title: "Lace & Light", file: "photo/Golden%20Lace%20Light%20Portrait.png" },
-      { id: "photo9", title: "Midnight Peace", file: "photo/Dreamy%20Rooftop%20Twilight%20Portrait.png" },
-      { id: "photo10", title: "Serene Harmony", file: "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png" }
+      { id: "photo1", title: "Sunshine Smile", file: "photo/thumbs/Sunshine%20Feels%20Like%20This.webp" },
+      { id: "photo2", title: "Golden Saree", file: "photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp" },
+      { id: "photo3", title: "Midnight Comfort", file: "photo/thumbs/Cozy%20Late-Night%20Pillow%20Portrait.webp" },
+      { id: "photo4", title: "Twilight Breeze", file: "photo/thumbs/Breezy%20Twilight%20Rooftop%20Portrait.webp" },
+      { id: "photo5", title: "Golden Hour Glow", file: "photo/thumbs/Golden%20Hour%20Triptych%20Portrait.webp" },
+      { id: "photo6", title: "Rooftop Starlight", file: "photo/thumbs/Twilight%20Rooftop%20Dupatta%20Portrait.webp" },
+      { id: "photo7", title: "Radiant Tradition", file: "photo/thumbs/Flashlit%20Traditional%20Portrait%20Diptych.webp" },
+      { id: "photo8", title: "Lace & Light", file: "photo/thumbs/Golden%20Lace%20Light%20Portrait.webp" },
+      { id: "photo9", title: "Midnight Peace", file: "photo/thumbs/Dreamy%20Rooftop%20Twilight%20Portrait.webp" },
+      { id: "photo10", title: "Serene Harmony", file: "photo/thumbs/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp" }
     ];
 
     function buildMemoryDeck() {
@@ -5197,21 +5213,21 @@
        9. CHAPTER 5: COMPLETE 15-PHOTO LIGHTBOX & FILTER CONTROLLER
        ========================================================================= */
     const collagePhotosData = [
-      { id: 1, image: "photo/Sunshine%20Feels%20Like%20This.png", tag: "Radiance ☀️", title: "Sunshine Feels Like This", quote: "“Her smile brings warmth that chases every trace of darkness away.”", category: "cozy" },
-      { id: 2, image: "photo/Breezy%20Twilight%20Rooftop%20Portrait.png", tag: "Twilight Winds 🌆", title: "Breezy Twilight Rooftop", quote: "“Standing high above the city quiet, where the cool breeze carries silent memories.”", category: "twilight" },
-      { id: 3, image: "photo/Golden%20Hour%20Triptych%20Portrait.png", tag: "Golden Triptych 🌟", title: "The Golden Hour Triptych", quote: "“Three frozen moments of laughter, every frame glowing like pure starlight.”", category: "golden" },
-      { id: 4, image: "photo/Cozy%20Late-Night%20Pillow%20Portrait.png", tag: "Midnight Laughs 💬", title: "Cozy Late-Night Pillow Portrait", quote: "“The playful, sleepy smiles that made 2 AM feel like the safest hour on earth.”", category: "cozy" },
-      { id: 5, image: "photo/Dreamy%20Golden%20Saree%20Portrait.png", tag: "Golden Grace ✨", title: "Dreamy Golden Saree", quote: "“Elegance, gentleness, and an unspoken spark that outshines every shadow.”", category: "saree" },
-      { id: 6, image: "photo/Twilight%20Rooftop%20Dupatta%20Portrait.png", tag: "Quiet Peace 🕊️", title: "Twilight Rooftop Dupatta", quote: "“A soft dupatta dancing with the wind — peaceful, free, and unburdened.”", category: "twilight" },
-      { id: 7, image: "photo/Flashlit%20Traditional%20Portrait%20Diptych.png", tag: "Enduring Bond ♾️", title: "Flashlit Traditional Diptych", quote: "“Two views of a kindred spirit. Distance tested us, but we found our way back.”", category: "saree" },
-      { id: 8, image: "photo/Golden%20Lace%20Light%20Portrait.png", tag: "Morning Light 🕯️", title: "Golden Lace Light", quote: "“Delicate patterns of sunbeams breaking through, proving the storm has passed.”", category: "golden" },
-      { id: 9, image: "photo/Dreamy%20Rooftop%20Twilight%20Portrait.png", tag: "Deep Thoughts 🌙", title: "Dreamy Rooftop Twilight", quote: "“Looking out at the dusk horizon, wondering if time would bring our friendship back.”", category: "twilight" },
-      { id: 10, image: "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png", tag: "Pure Royalty 👑", title: "Serene Maroon & Gold", quote: "“Carrying quiet strength and royal grace through every heavy chapter.”", category: "saree" },
-      { id: 11, image: "photo/Golden-Hour%20Lavender%20Portraits.png", tag: "Lavender Sunset 💜", title: "Golden-Hour Lavender Dreams", quote: "“Soft floral hues and evening warmth, a sanctuary for a tired heart.”", category: "golden" },
-      { id: 12, image: "photo/Golden-Hour%20Countryside%20Portrait.png", tag: "Open Skies 🌾", title: "Countryside Golden Hour", quote: "“Clear paths ahead, leaving behind the weight of yesterday.”", category: "golden" },
-      { id: 13, image: "photo/Traditional%20Saree%20Selfie%20Collage.png", tag: "Shared Laughter 🧸", title: "Traditional Saree Selfie Collage", quote: "“Four distinct expressions of joy — because being silly is where our best memories live.”", category: "cozy" },
-      { id: 14, image: "photo/Twilight%20Rooftop%20Portrait%20Triptych.png", tag: "Twilight Trilogy 🌃", title: "Twilight Rooftop Triptych", quote: "“Watching the city lights turn on, holding onto the hope that we would talk again.”", category: "twilight" },
-      { id: 15, image: "photo/Warm%20Wavy-Mirror%20Sari%20Selfie.png", tag: "Aesthetic Reflection 🪞", title: "Warm Wavy-Mirror Reflection", quote: "“Reflecting back on 390 days of silence, and knowing our bond is stronger than ever.”", category: "saree" }
+      { id: 1, image: "photo/thumbs/Sunshine%20Feels%20Like%20This.webp", fullImage: "photo/Sunshine%20Feels%20Like%20This.webp", tag: "Radiance ☀️", title: "Sunshine Feels Like This", quote: "“Her smile brings warmth that chases every trace of darkness away.”", category: "cozy" },
+      { id: 2, image: "photo/thumbs/Breezy%20Twilight%20Rooftop%20Portrait.webp", fullImage: "photo/Breezy%20Twilight%20Rooftop%20Portrait.webp", tag: "Twilight Winds 🌆", title: "Breezy Twilight Rooftop", quote: "“Standing high above the city quiet, where the cool breeze carries silent memories.”", category: "twilight" },
+      { id: 3, image: "photo/thumbs/Golden%20Hour%20Triptych%20Portrait.webp", fullImage: "photo/Golden%20Hour%20Triptych%20Portrait.webp", tag: "Golden Triptych 🌟", title: "The Golden Hour Triptych", quote: "“Three frozen moments of laughter, every frame glowing like pure starlight.”", category: "golden" },
+      { id: 4, image: "photo/thumbs/Cozy%20Late-Night%20Pillow%20Portrait.webp", fullImage: "photo/Cozy%20Late-Night%20Pillow%20Portrait.webp", tag: "Midnight Laughs 💬", title: "Cozy Late-Night Pillow Portrait", quote: "“The playful, sleepy smiles that made 2 AM feel like the safest hour on earth.”", category: "cozy" },
+      { id: 5, image: "photo/thumbs/Dreamy%20Golden%20Saree%20Portrait.webp", fullImage: "photo/Dreamy%20Golden%20Saree%20Portrait.webp", tag: "Golden Grace ✨", title: "Dreamy Golden Saree", quote: "“Elegance, gentleness, and an unspoken spark that outshines every shadow.”", category: "saree" },
+      { id: 6, image: "photo/thumbs/Twilight%20Rooftop%20Dupatta%20Portrait.webp", fullImage: "photo/Twilight%20Rooftop%20Dupatta%20Portrait.webp", tag: "Quiet Peace 🕊️", title: "Twilight Rooftop Dupatta", quote: "“A soft dupatta dancing with the wind — peaceful, free, and unburdened.”", category: "twilight" },
+      { id: 7, image: "photo/thumbs/Flashlit%20Traditional%20Portrait%20Diptych.webp", fullImage: "photo/Flashlit%20Traditional%20Portrait%20Diptych.webp", tag: "Enduring Bond ♾️", title: "Flashlit Traditional Diptych", quote: "“Two views of a kindred spirit. Distance tested us, but we found our way back.”", category: "saree" },
+      { id: 8, image: "photo/thumbs/Golden%20Lace%20Light%20Portrait.webp", fullImage: "photo/Golden%20Lace%20Light%20Portrait.webp", tag: "Morning Light 🕯️", title: "Golden Lace Light", quote: "“Delicate patterns of sunbeams breaking through, proving the storm has passed.”", category: "golden" },
+      { id: 9, image: "photo/thumbs/Dreamy%20Rooftop%20Twilight%20Portrait.webp", fullImage: "photo/Dreamy%20Rooftop%20Twilight%20Portrait.webp", tag: "Deep Thoughts 🌙", title: "Dreamy Rooftop Twilight", quote: "“Looking out at the dusk horizon, wondering if time would bring our friendship back.”", category: "twilight" },
+      { id: 10, image: "photo/thumbs/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp", fullImage: "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.webp", tag: "Pure Royalty 👑", title: "Serene Maroon & Gold", quote: "“Carrying quiet strength and royal grace through every heavy chapter.”", category: "saree" },
+      { id: 11, image: "photo/thumbs/Golden-Hour%20Lavender%20Portraits.webp", fullImage: "photo/Golden-Hour%20Lavender%20Portraits.webp", tag: "Lavender Sunset 💜", title: "Golden-Hour Lavender Dreams", quote: "“Soft floral hues and evening warmth, a sanctuary for a tired heart.”", category: "golden" },
+      { id: 12, image: "photo/thumbs/Golden-Hour%20Countryside%20Portrait.webp", fullImage: "photo/Golden-Hour%20Countryside%20Portrait.webp", tag: "Open Skies 🌾", title: "Countryside Golden Hour", quote: "“Clear paths ahead, leaving behind the weight of yesterday.”", category: "golden" },
+      { id: 13, image: "photo/thumbs/Traditional%20Saree%20Selfie%20Collage.webp", fullImage: "photo/Traditional%20Saree%20Selfie%20Collage.webp", tag: "Shared Laughter 🧸", title: "Traditional Saree Selfie Collage", quote: "“Four distinct expressions of joy — because being silly is where our best memories live.”", category: "cozy" },
+      { id: 14, image: "photo/thumbs/Twilight%20Rooftop%20Portrait%20Triptych.webp", fullImage: "photo/Twilight%20Rooftop%20Portrait%20Triptych.webp", tag: "Twilight Trilogy 🌃", title: "Twilight Rooftop Triptych", quote: "“Watching the city lights turn on, holding onto the hope that we would talk again.”", category: "twilight" },
+      { id: 15, image: "photo/thumbs/Warm%20Wavy-Mirror%20Sari%20Selfie.webp", fullImage: "photo/Warm%20Wavy-Mirror%20Sari%20Selfie.webp", tag: "Aesthetic Reflection 🪞", title: "Warm Wavy-Mirror Reflection", quote: "“Reflecting back on 390 days of silence, and knowing our bond is stronger than ever.”", category: "saree" }
     ];
 
     let currentPhotoIndex = 0;
@@ -5230,7 +5246,7 @@
       currentPhotoIndex = idx;
 
       const p = collagePhotosData[idx];
-      if (zoomModalImg) zoomModalImg.src = p.image;
+      if (zoomModalImg) zoomModalImg.src = p.fullImage || p.image;
       if (zoomTagTarget) zoomTagTarget.innerText = p.tag;
       if (zoomCounterTarget) zoomCounterTarget.innerText = `Photo ${idx + 1} of ${collagePhotosData.length}`;
       if (zoomTitleTarget) zoomTitleTarget.innerText = p.title;
