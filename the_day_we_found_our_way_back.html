@@ -12,7 +12,7 @@
   <meta name="theme-color" content="#040814">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>The Day We Found Our Way Back 🖤💙♾️</title> 
+  <title>The Day We Found Our Way Back 🖤💙♾️</title>  
 
   <!-- Inline Dynamic SVG Favicon (Hosting-Ready: Zero 404s) -->
   <link rel="icon"
@@ -78,35 +78,7 @@
   <div class="ambient-orb ambient-orb-2"></div>
   <div class="ambient-orb ambient-orb-3"></div>
 
-  <!-- =========================================================================
-       SUBTLE FLOATING CONTROLS (Top Right - No Top Header Banner!)
-       ========================================================================= -->
-  <aside class="floating-status-bar" aria-label="Status & Ambient Controls">
-    <!-- Quick Chapter Indicator -->
-    <div class="chapter-indicator-pill cursor-pointer" id="btn-chapter-menu-toggle"
-      title="Click to jump to any chapter">
-      <span class="text-xs">📖</span>
-      <span id="current-chapter-indicator">Chapter 1 of 6</span>
-    </div>
 
-    <!-- Send Blue Heart -->
-    <button id="btn-spawn-quick-heart" title="Send a floating blue heart into the stars"
-      class="quick-btn text-electricBlue" aria-label="Send floating heart">
-      <span class="text-base select-none">💙</span>
-    </button>
-
-    <!-- Ambient Music Toggle with Live Equalizer -->
-    <button id="btn-quick-audio" title="Play / Pause Celestial Ambient Melody" class="quick-btn text-iceBlue"
-      aria-label="Play ambient music">
-      <span id="quick-audio-icon" class="text-sm select-none">🎧</span>
-      <span id="audio-eq-bars" class="audio-equalizer hidden">
-        <span class="audio-bar"></span>
-        <span class="audio-bar"></span>
-        <span class="audio-bar"></span>
-        <span class="audio-bar"></span>
-      </span>
-    </button>
-  </aside>
 
   <!-- QUICK CHAPTER JUMP MODAL MENU -->
   <div id="chapter-menu-modal"
@@ -2891,11 +2863,7 @@
   </section>
 
 
-  <!-- CLEAN FOOTER -->
-  <footer class="py-12 border-t border-electricBlue/15 text-center text-xs text-iceBlue/50 space-y-2 font-mono">
-    <p>THE DAY WE FOUND OUR WAY BACK &bull; MIDNIGHT BLACK & ELECTRIC BLUE ♾️</p>
-    <p>From Yadav to Kashish / Lavanya / Lavi &bull; Depression Buddy 🖤💙</p>
-  </footer>
+
 
 
   <!-- =========================================================================
@@ -3156,7 +3124,8 @@
             goToArcadeGame(currentArcadeGame, false);
           }
         } else {
-          document.getElementById("current-chapter-indicator").innerText = `Chapter ${num} of ${totalChapters}`;
+          const ind = document.getElementById("current-chapter-indicator");
+          if (ind) ind.innerText = `Chapter ${num} of ${totalChapters}`;
         }
         window.scrollTo({ top: 0, behavior: 'smooth' });
         showToast(`Entered Chapter ${num} 💙`, "✨");
@@ -3167,10 +3136,13 @@
 
     // Chapter modal menu
     const chapterModal = document.getElementById("chapter-menu-modal");
-    document.getElementById("btn-chapter-menu-toggle").addEventListener("click", () => {
-      if (typeof sfx !== 'undefined') sfx.whoosh();
-      chapterModal.classList.remove("hidden");
-    });
+    const btnChapterMenu = document.getElementById("btn-chapter-menu-toggle");
+    if (btnChapterMenu) {
+      btnChapterMenu.addEventListener("click", () => {
+        if (typeof sfx !== 'undefined') sfx.whoosh();
+        if (chapterModal) chapterModal.classList.remove("hidden");
+      });
+    }
     document.getElementById("btn-close-chapter-menu").addEventListener("click", () => {
       if (typeof sfx !== 'undefined') sfx.tap();
       chapterModal.classList.add("hidden");
@@ -3459,12 +3431,15 @@
       } catch (err) {}
     }
 
-    document.getElementById("btn-spawn-quick-heart").addEventListener("click", (e) => {
-      spawnFloatingHeart(e.clientX, e.clientY);
-      spawnCelebrationBurst(e.clientX, e.clientY);
-      if (typeof sfx !== 'undefined') sfx.sparkle();
-      showToast("A blue heart sent into the stars 💙", "✨");
-    });
+    const btnQuickHeart = document.getElementById("btn-spawn-quick-heart");
+    if (btnQuickHeart) {
+      btnQuickHeart.addEventListener("click", (e) => {
+        spawnFloatingHeart(e.clientX, e.clientY);
+        spawnCelebrationBurst(e.clientX, e.clientY);
+        if (typeof sfx !== 'undefined') sfx.sparkle();
+        showToast("A blue heart sent into the stars 💙", "✨");
+      });
+    }
 
 
     /* =========================================================================
@@ -3560,7 +3535,10 @@
       }
     }
 
-    document.getElementById("btn-quick-audio").addEventListener("click", toggleAudio);
+    const btnQuickAudio = document.getElementById("btn-quick-audio");
+    if (btnQuickAudio) {
+      btnQuickAudio.addEventListener("click", toggleAudio);
+    }
 
     // =========================================================================
     // HIGH-QUALITY PROCEDURAL SOUND EFFECTS (SFX ENGINE)
