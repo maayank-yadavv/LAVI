@@ -1,0 +1,8 @@
+# Temporary scratch and tests
+scratch/
+node_modules/
+*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db

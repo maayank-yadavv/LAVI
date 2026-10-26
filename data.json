@@ -1,0 +1,415 @@
+{
+  "meta": {
+    "title": "The Day We Found Our Way Back",
+    "subtitle": "A Universe Made For You",
+    "emojis": "🖤💙♾️",
+    "author": "Yadav",
+    "recipient": "Kashish / Lavanya / Lavi",
+    "role": "Depression Buddy",
+    "reconnectionDate": "October 24",
+    "reconnectionIso": "2024-10-24T00:00:00",
+    "daysOfSilence": 390
+  },
+  "passwords": {
+    "universe": [
+      "buddy"
+    ],
+    "universeHint": "What Yadav always calls you when days are heavy... (2 words: depression ...)",
+    "vault": [
+      "silence",
+      "clarity",
+      "yadav",
+      "truth"
+    ],
+    "vaultHint": "What stretched between us for 390 days... (7 letters: s _ _ _ _ _ e)"
+  },
+  "chapter1": {
+    "badge": "A Universe Made For You ♾️",
+    "heroTitle": "Hello Depression Buddy,<br/>finally you are back here 💙",
+    "heroQuote": "“I lived 390 days completely without you. And now, after all that quiet, you are finally back.”",
+    "cinematicLines": [
+      "“It's strange how life works sometimes…”",
+      "“People who once talked about everything can suddenly go 390 days without saying a word.”",
+      "“Days become months. 390 days of silence became normal.”",
+      "“And then… on October 24, we finally had that small talk. 💙”",
+      "“So I created a small universe for you. Please step inside.”"
+    ],
+    "distance": {
+      "badge": "THE MEASURE OF DISTANCE",
+      "subtitle": "A CONTINUOUS JOURNEY OF",
+      "number": 390,
+      "title": "Days of Unbroken Silence",
+      "narrative": "390 days is not simply a number on a calendar. It is 390 sunsets without speaking, 390 mornings carrying the weight of what went unsaid, and 390 days of learning that running away from difficult conversations solves nothing.",
+      "reconnectionBadge": "Finally Reconnected on October 24 — The Silence Broke",
+      "stats": [
+        {
+          "value": "390",
+          "label": "DAYS OF ABSENCE"
+        },
+        {
+          "value": "9,360",
+          "label": "HOURS OF REFLECTION"
+        },
+        {
+          "value": "561,600",
+          "label": "MINUTES OF REGRET"
+        },
+        {
+          "value": "33,696,000",
+          "label": "SECONDS OF WAITING"
+        }
+      ]
+    },
+    "smallTalkCard": {
+      "icon": "🦋",
+      "title": "“Finally, we had that small talk…”",
+      "paragraph1": "For Kashish, Lavanya, Lavi — my Depression Buddy. When we finally spoke again, it wasn't loud, and it didn't need to fix everything in a single second. But hearing from you reminded me that 390 days of quiet couldn't wipe away the bond we formed.",
+      "paragraph2": "Because you're back, I built this entire small universe for you. Seven little games, a very fancy wax-sealed letter, our photo collage, and the unsaid words from 390 days.",
+      "ctaButton": "ENTER THE UNIVERSE THAT I MADE FOR YOU ♾️"
+    }
+  },
+  "chapter2": {
+    "title": "Enter The Universe Gate",
+    "subtitle": "A secret word guards your gaming arcade and letter.",
+    "inputPlaceholder": "Enter password...",
+    "hint": "Hint: What Yadav always lovingly calls you... (depression ...)",
+    "successMessage": "So, we are back again! You are happy now? Now let's play the games! 🎮💙"
+  },
+  "chapter3": {
+    "title": "The Friendship Arcade",
+    "subtitle": "7 games crafted for Lavi. Play one game per page and unlock the fancy envelope!",
+    "games": {
+      "ttt": {
+        "title": "Tic-Tac-Toe with Yadav & Lavi 💙🖤",
+        "playerTurn": "Your turn: Lavi 💙",
+        "aiTurn": "My turn: Yadav 🖤"
+      },
+      "wordFinder": {
+        "title": "The Big Celestial Word Finder 🔍",
+        "subtitle": "Find all the hidden names and sacred words in this 12x12 grid!",
+        "words": [
+          "LAVI",
+          "LAVANYA",
+          "DEPRESSION",
+          "BUDDY",
+          "STAR",
+          "MOON",
+          "OGEE",
+          "OBEE",
+          "YADAV",
+          "HOPE",
+          "OCTOBER",
+          "FOREVER"
+        ]
+      },
+      "balloons": [
+        "“I never stopped hoping our paths would cross again.”",
+        "“You gave ordinary days a spark of laughter.”",
+        "“390 days didn't erase what made you special.”",
+        "“I know your depression, and I never stopped caring about how heavy your days felt.”",
+        "“Welcome back, Depression Buddy. 💙”"
+      ],
+      "wheel": [
+        "Send a random blue heart 💙",
+        "Share a midnight song 🎧",
+        "Tell an embarrassing laugh 😂",
+        "Ask a random question ✨",
+        "One thing you missed 🫶🏻",
+        "Virtual warm hug 🫂",
+        "Random weird thought 🌙",
+        "A new memory ♾️"
+      ],
+      "mysteryBoxes": [
+        {
+          "id": "A",
+          "label": "Box A",
+          "text": "Token of Gentle Silence: A promise to never crowd you when life feels heavy. Take all the time you need. 💙"
+        },
+        {
+          "id": "B",
+          "label": "Box B ✨ (Correct Box!)",
+          "text": "✨ THE GOLDEN HEART PROMISE: You found the real box! An unbreakable lifetime pass: No matter how distant things get or how deep the depression feels, Yadav will always be in your corner, listening without judgment. 💙♾️"
+        },
+        {
+          "id": "C",
+          "label": "Box C",
+          "text": "Token of Shared Music: A midnight song etched into the stars. Some melodies never lose their warmth. 🎧✨"
+        }
+      ],
+      "memorySymbols": [
+        "🌙",
+        "💙",
+        "♾️",
+        "🦋",
+        "✨",
+        "🖤",
+        "🎧",
+        "🧸",
+        "🌸",
+        "🫂"
+      ]
+    },
+    "finishPrompt": "So you're excited for what I made for you? 💌",
+    "finishButton": "Open The Wax-Sealed Envelope →"
+  },
+  "chapter4": {
+    "envelopeBadge": "WORDS PRESERVED FOR THIS EXACT MOMENT",
+    "envelopeTitle": "The Very Fancy Wax-Sealed Letter",
+    "recipient": "To Kashish / Lavanya / Lavi",
+    "subtitle": "PERSONAL & CONFIDENTIAL",
+    "preview": "“When talking was impossible, these sentences waited patiently for the day we found our way back.”",
+    "fullLetter": {
+      "greeting": "Hey, Depression Buddy,",
+      "paragraphs": [
+        "I don't really know where to begin. It's been such a long time since we talked the way we used to, and there are things I never really knew how to put into words while the days were passing by.",
+        "390 days without you felt like an eternity. 390 days without talking, without knowing how you were doing, without knowing if you were good, or how deep your depression was pulling you down... Because I know your depression. I know how quietly you carry your sadness, and I know how deeply you can get hurt. Not knowing if you were safe, if you were eating, or if you were crying alone at night was the hardest weight I have ever carried.",
+        "Sometimes, I think about how strange it is that two people can go from sharing every little silly joke to knowing almost nothing about what the other person's days look like. Life moves on, time passes, and silence quietly becomes a part of the routine. But the memories don't simply vanish. I still remembered your laugh, your voice, the random midnight messages, and the comfort of having someone who truly understood.",
+        "And now, after 390 days of silence, we're talking again."
+      ],
+      "highlightBox": {
+        "title": "Reflections Held in Silence • For Kashish / Lavanya / Lavi",
+        "paragraphs": [
+          "I don't expect everything to become magically what it was in an instant. People change, life changes, and we've both carried our share of hurt. I just think it is a miracle that we have another chance to talk, to laugh, to share songs, and to build new memories without having to force anything.",
+          "Kashish, Lavanya, Lavi — whatever name I use, this little corner of my heart will always belong to the person behind it.",
+          "I'm glad our paths crossed again, Depression Buddy. No pressure. No expectations. Just pure gratitude that you are alive, that you are here, and that the silence finally broke."
+        ]
+      },
+      "closing": "Here's to new conversations, unexpected laughs, random messages, shared songs, and all the little moments that might become memories someday.",
+      "signoff": "Welcome back. 💙",
+      "signature": "— From someone who is genuinely glad you're here. Yadav 🖤"
+    }
+  },
+  "chapter5": {
+    "title": "The Grand Friendship Memory Collage",
+    "subtitle": "15 Cherished Moments of Kashish, Lavanya, Lavi • Preserved Across 390 Days. Click any photo to zoom in.",
+    "categories": [
+      {
+        "key": "all",
+        "label": "All 15 Memories"
+      },
+      {
+        "key": "twilight",
+        "label": "Twilight Rooftops 🌆"
+      },
+      {
+        "key": "golden",
+        "label": "Golden Hours 🌟"
+      },
+      {
+        "key": "saree",
+        "label": "Saree Elegance ✨"
+      },
+      {
+        "key": "cozy",
+        "label": "Cozy Smiles 🧸"
+      }
+    ],
+    "items": [
+      {
+        "id": 1,
+        "image": "photo/Sunshine%20Feels%20Like%20This.png",
+        "filename": "Sunshine Feels Like This.png",
+        "category": "cozy",
+        "badge": "Radiance ☀️",
+        "icon": "☀️",
+        "title": "Sunshine Feels Like This",
+        "quote": "“Her smile brings warmth that chases every trace of darkness away.”",
+        "details": "The sheer warmth of an unforced smile. After 390 silent sunsets, this is the exact radiance that reminds me why our friendship matters so much.",
+        "rotation": "-2deg"
+      },
+      {
+        "id": 2,
+        "image": "photo/Breezy%20Twilight%20Rooftop%20Portrait.png",
+        "filename": "Breezy Twilight Rooftop Portrait.png",
+        "category": "twilight",
+        "badge": "Twilight Winds 🌆",
+        "icon": "🌆",
+        "title": "Breezy Twilight Rooftop",
+        "quote": "“Standing high above the city quiet, where the cool breeze carries silent memories.”",
+        "details": "Golden evening light touching the skyline while the wind plays with her hair. Quiet, serene, and infinitely calm.",
+        "rotation": "2deg"
+      },
+      {
+        "id": 3,
+        "image": "photo/Golden%20Hour%20Triptych%20Portrait.png",
+        "filename": "Golden Hour Triptych Portrait.png",
+        "category": "golden",
+        "badge": "Golden Triptych 🌟",
+        "icon": "🌟",
+        "title": "The Golden Hour Triptych",
+        "quote": "“Three frozen moments of laughter, every frame glowing like pure starlight.”",
+        "details": "Three frames capturing spontaneous laughter and natural ease. A gentle reminder that happiness always returns.",
+        "rotation": "-1.5deg"
+      },
+      {
+        "id": 4,
+        "image": "photo/Cozy%20Late-Night%20Pillow%20Portrait.png",
+        "filename": "Cozy Late-Night Pillow Portrait.png",
+        "category": "cozy",
+        "badge": "Midnight Laughs 💬",
+        "icon": "💬",
+        "title": "Cozy Late-Night Pillow Portrait",
+        "quote": "“The playful, sleepy smiles that made 2 AM feel like the safest hour on earth.”",
+        "details": "Resting against the pillow after hours of sharing jokes and unburdening heavy minds. Safe, simple, and true.",
+        "rotation": "1.5deg"
+      },
+      {
+        "id": 5,
+        "image": "photo/Dreamy%20Golden%20Saree%20Portrait.png",
+        "filename": "Dreamy Golden Saree Portrait.png",
+        "category": "saree",
+        "badge": "Golden Grace ✨",
+        "icon": "✨",
+        "title": "Dreamy Golden Saree",
+        "quote": "“Elegance, gentleness, and an unspoken spark that outshines every shadow.”",
+        "details": "Dressed in radiant gold, carrying effortless grace and poise. A portrait that belongs in the stars.",
+        "rotation": "-2deg"
+      },
+      {
+        "id": 6,
+        "image": "photo/Twilight%20Rooftop%20Dupatta%20Portrait.png",
+        "filename": "Twilight Rooftop Dupatta Portrait.png",
+        "category": "twilight",
+        "badge": "Quiet Peace 🕊️",
+        "icon": "🕊️",
+        "title": "Twilight Rooftop Dupatta",
+        "quote": "“A soft dupatta dancing with the wind — peaceful, free, and unburdened.”",
+        "details": "Looking over the city horizon as dusk deepens into electric blue. Unspoken thoughts carried away by the gentle breeze.",
+        "rotation": "2deg"
+      },
+      {
+        "id": 7,
+        "image": "photo/Flashlit%20Traditional%20Portrait%20Diptych.png",
+        "filename": "Flashlit Traditional Portrait Diptych.png",
+        "category": "saree",
+        "badge": "Enduring Bond ♾️",
+        "icon": "♾️",
+        "title": "Flashlit Traditional Diptych",
+        "quote": "“Two views of a kindred spirit. Distance tested us, but we found our way back.”",
+        "details": "Two complementary angles capturing poise, tradition, and radiant sparkle. Distance couldn't undo this connection.",
+        "rotation": "-1deg"
+      },
+      {
+        "id": 8,
+        "image": "photo/Golden%20Lace%20Light%20Portrait.png",
+        "filename": "Golden Lace Light Portrait.png",
+        "category": "golden",
+        "badge": "Morning Light 🕯️",
+        "icon": "🕯️",
+        "title": "Golden Lace Light",
+        "quote": "“Delicate patterns of sunbeams breaking through, proving the storm has passed.”",
+        "details": "Sunbeams tracing soft lace patterns, symbolizing the quiet hope that kept glowing through 390 days of silence.",
+        "rotation": "1deg"
+      },
+      {
+        "id": 9,
+        "image": "photo/Dreamy%20Rooftop%20Twilight%20Portrait.png",
+        "filename": "Dreamy Rooftop Twilight Portrait.png",
+        "category": "twilight",
+        "badge": "Deep Thoughts 🌙",
+        "icon": "🌙",
+        "title": "Dreamy Rooftop Twilight",
+        "quote": "“Looking out at the dusk horizon, wondering if time would bring our friendship back.”",
+        "details": "Evening reflections overlooking the quiet city lights. A quiet moment where memories spoke louder than words.",
+        "rotation": "-2deg"
+      },
+      {
+        "id": 10,
+        "image": "photo/Serene%20Portrait%20in%20Maroon%20and%20Gold.png",
+        "filename": "Serene Portrait in Maroon and Gold.png",
+        "category": "saree",
+        "badge": "Pure Royalty 👑",
+        "icon": "👑",
+        "title": "Serene Maroon & Gold",
+        "quote": "“Carrying quiet strength and royal grace through every heavy chapter.”",
+        "details": "Draped in deep maroon and antique gold, displaying strength and gentle dignity that inspires everyone around her.",
+        "rotation": "2deg"
+      },
+      {
+        "id": 11,
+        "image": "photo/Golden-Hour%20Lavender%20Portraits.png",
+        "filename": "Golden-Hour Lavender Portraits.png",
+        "category": "golden",
+        "badge": "Lavender Sunset 💜",
+        "icon": "💜",
+        "title": "Golden-Hour Lavender Dreams",
+        "quote": "“Soft floral hues and evening warmth, a sanctuary for a tired heart.”",
+        "details": "Warm twilight filtered through lavender blossoms. Calming, restorative, and filled with quiet grace.",
+        "rotation": "-1.5deg"
+      },
+      {
+        "id": 12,
+        "image": "photo/Golden-Hour%20Countryside%20Portrait.png",
+        "filename": "Golden-Hour Countryside Portrait.png",
+        "category": "golden",
+        "badge": "Open Skies 🌾",
+        "icon": "🌾",
+        "title": "Countryside Golden Hour",
+        "quote": "“Clear paths ahead, leaving behind the weight of yesterday.”",
+        "details": "Open fields and golden sunlight, stepping into a brighter tomorrow without the heavy shadows of the past.",
+        "rotation": "1.5deg"
+      },
+      {
+        "id": 13,
+        "image": "photo/Traditional%20Saree%20Selfie%20Collage.png",
+        "filename": "Traditional Saree Selfie Collage.png",
+        "category": "cozy",
+        "badge": "Shared Laughter 🧸",
+        "icon": "🧸",
+        "title": "Traditional Saree Selfie Collage",
+        "quote": "“Four distinct expressions of joy — because being silly is where our best memories live.”",
+        "details": "Four fun, candid selfie panels showing funny faces, sweet smiles, and genuine silliness that makes friendship real.",
+        "rotation": "-2deg"
+      },
+      {
+        "id": 14,
+        "image": "photo/Twilight%20Rooftop%20Portrait%20Triptych.png",
+        "filename": "Twilight Rooftop Portrait Triptych.png",
+        "category": "twilight",
+        "badge": "Twilight Trilogy 🌃",
+        "icon": "🌃",
+        "title": "Twilight Rooftop Triptych",
+        "quote": "“Watching the city lights turn on, holding onto the hope that we would talk again.”",
+        "details": "A three-part progression of quiet moments on the rooftop as night gently fell across the skyline.",
+        "rotation": "2deg"
+      },
+      {
+        "id": 15,
+        "image": "photo/Warm%20Wavy-Mirror%20Sari%20Selfie.png",
+        "filename": "Warm Wavy-Mirror Sari Selfie.png",
+        "category": "saree",
+        "badge": "Aesthetic Reflection 🪞",
+        "icon": "🪞",
+        "title": "Warm Wavy-Mirror Reflection",
+        "quote": "“Reflecting back on 390 days of silence, and knowing our bond is stronger than ever.”",
+        "details": "A creative, aesthetic mirror selfie framed by warm tones and soft waves. Looking at the reflection of resilience.",
+        "rotation": "-1deg"
+      }
+    ]
+  },
+  "chapter6": {
+    "title": "The Secret Vault: Clarifications on Every Topic",
+    "subtitle": "Everything that happened from my side. Full clarity, honesty, and the unsaid truths.",
+    "author": "Yadav",
+    "recipient": "Kashish / Lavanya / Lavi (My Depression Buddy)",
+    "sections": [
+      {
+        "heading": "1. Why The Silence Happened & The Regret of Running Away",
+        "text": "When 390 days of silence stretched between us, you probably wondered how I could go so long without saying a word. The raw truth is that I panicked. When misunderstandings occurred, instead of confronting them with maturity, I retreated into my shell. I convinced myself that if I spoke, I might say the wrong thing and hurt you worse. I learned the hardest lesson of my life: silence does not heal wounds, it only leaves the person you care about feeling abandoned."
+      },
+      {
+        "heading": "2. On Never Intending to Hurt You",
+        "text": "I want you to know with absolute certainty: I never, for a single fraction of a second, wanted to hurt you. I have bloody reasons and explanations for every single thing that happened from my side, every talk, every topic. None of it was born from malice or lack of care. If anything, I cared so intensely that the fear of failing you paralyzed me."
+      },
+      {
+        "heading": "3. Knowing Your Depression & Carrying the Worry",
+        "text": "I know your depression. I know how heavy your chest gets, how your mind spirals, and how easy it is to believe that people don't care. That is why being silent tore me apart inside. Every time weeks passed, I would stare at my phone, wanting to ask: 'Are you eating? Are you sleeping? Did you make it through today?' Putting that phone down without sending a message felt like carrying a boulder on my heart."
+      },
+      {
+        "heading": "4. The October 24 Reconnection & My Promise to You",
+        "text": "When October 24 arrived and we finally spoke, the weight of 390 days lifted. I don't hold a single ounce of bitterness for the time that passed. It proved that what we shared was real—it survived more than a year of absolute quiet. My promise to you now is simple: No more running away. No more unanswered silence. Whenever you need an ear, whenever your depression is loud, I am here. You are safe with me."
+      }
+    ],
+    "signoff": "From your Depression Buddy, Yadav 🖤💙"
+  }
+}
