@@ -3452,3 +3452,10 @@ button {
     scroll-behavior: auto !important;
   }
 }
+
+/* Layout overrides: clean display without top step navigation or score track */
+.score-progress-track,
+.arcade-step-nav,
+#chapter-menu-modal {
+  display: none !important;
+}

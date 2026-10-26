@@ -80,72 +80,7 @@
 
 
 
-  <!-- QUICK CHAPTER JUMP MODAL MENU -->
-  <div id="chapter-menu-modal"
-    class="fixed inset-0 z-50 bg-midnight/90 backdrop-blur-xl hidden flex items-center justify-center p-4">
-    <div class="max-w-md w-full liquid-glass rounded-3xl p-6 border border-electricBlue/40 shadow-2xl">
-      <div class="flex items-center justify-between pb-3 mb-4 border-b border-iceBlue/15">
-        <h3 class="font-serif text-xl font-bold text-softWhite">Jump to Chapter</h3>
-        <button id="btn-close-chapter-menu" class="text-iceBlue/70 hover:text-white text-xl p-1">✕</button>
-      </div>
-      <div class="space-y-2 font-sans text-sm">
-        <button
-          class="w-full text-left p-3 rounded-xl bg-deepNavy/80 hover:bg-electricBlue/20 border border-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-          onclick="goToChapter(1); closeChapterMenu();">
-          <span>🌙 Chapter 1: The Return & 390 Days</span>
-          <span class="text-xs text-iceBlue/50 font-mono">Page 1</span>
-        </button>
-        <button
-          class="w-full text-left p-3 rounded-xl bg-deepNavy/80 hover:bg-electricBlue/20 border border-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-          onclick="goToChapter(2); closeChapterMenu();">
-          <span>🔐 Chapter 2: The Universe Gate (Passcode)</span>
-          <span class="text-xs text-iceBlue/50 font-mono">Page 2</span>
-        </button>
-        <div class="rounded-xl bg-deepNavy/80 border border-electricBlue/20 overflow-hidden">
-          <button class="w-full text-left p-3 hover:bg-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-            onclick="if(goToChapter(3)){goToArcadeGame(1); closeChapterMenu();}">
-            <span>🎮 Chapter 3: The Friendship Arcade</span>
-            <span class="text-xs text-cyan-300 font-mono">1 Game / Page</span>
-          </button>
-          <div
-            class="grid grid-cols-7 gap-1 px-2.5 pb-2.5 pt-0.5 border-t border-iceBlue/10 text-center font-mono text-[11px]">
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(1)){closeChapterMenu();}}" title="Game 1: Tic-Tac-Toe">G1</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(2)){closeChapterMenu();}}" title="Game 2: Word Finder">G2</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(3)){closeChapterMenu();}}" title="Game 3: Balloons">G3</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(4)){closeChapterMenu();}}" title="Game 4: Spin Wheel">G4</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(5)){closeChapterMenu();}}" title="Game 5: Mystery Box">G5</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(6)){closeChapterMenu();}}" title="Game 6: Memory Match">G6</button>
-            <button class="py-1 rounded bg-midnight/80 hover:bg-electricBlue/30 text-iceBlue cursor-pointer"
-              onclick="if(goToChapter(3)){if(goToArcadeGame(7)){closeChapterMenu();}}" title="Game 7: Heart Catcher">G7</button>
-          </div>
-        </div>
-        <button
-          class="w-full text-left p-3 rounded-xl bg-deepNavy/80 hover:bg-electricBlue/20 border border-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-          onclick="if(goToChapter(4)){closeChapterMenu();}">
-          <span>💌 Chapter 4: The Fancy Wax-Sealed Letter</span>
-          <span class="text-xs text-iceBlue/50 font-mono">Page 4</span>
-        </button>
-        <button
-          class="w-full text-left p-3 rounded-xl bg-deepNavy/80 hover:bg-electricBlue/20 border border-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-          onclick="if(goToChapter(5)){closeChapterMenu();}">
-          <span>📸 Chapter 5: Digital Memory Scrapbook</span>
-          <span class="text-xs text-iceBlue/50 font-mono">Page 5</span>
-        </button>
-        <button
-          class="w-full text-left p-3 rounded-xl bg-deepNavy/80 hover:bg-electricBlue/20 border border-electricBlue/20 transition-all flex items-center justify-between cursor-pointer"
-          onclick="if(goToChapter(6)){closeChapterMenu();}">
-          <span>🗝️ Chapter 6: The Secret Vault (Clarifications)</span>
-          <span class="text-xs text-iceBlue/50 font-mono">Page 6</span>
-        </button>
-      </div>
-    </div>
-  </div>
+
 
 
   <!-- =========================================================================
@@ -505,70 +440,7 @@
         </div>
       </div>
 
-      <!-- Live Score & Progress Meter -->
-      <div class="score-progress-track">
-        <div id="arcade-score-bar" class="score-progress-fill" style="width: 0%;"></div>
-      </div>
 
-      <div class="flex items-center justify-between max-w-md mx-auto mt-2.5 text-xs text-iceBlue/80 font-mono">
-        <span>Score: <strong id="arcade-score-text" class="text-electricBlue font-bold text-sm">0%</strong> Completed</span>
-        <span class="text-cyan-400 flex items-center gap-1.5 font-semibold">
-          <span>🎮</span> Clear To Progress
-        </span>
-      </div>
-
-      <!-- 7 GAME STEP TABS (ONE GAME PER PAGE NAVIGATION) -->
-      <nav class="arcade-step-nav" aria-label="Arcade Games Navigation">
-        <button class="arcade-step-btn active" data-game="1" onclick="goToArcadeGame(1)" title="Game 1: Tic-Tac-Toe">
-          <span class="font-bold">1</span>
-          <span>🎮</span>
-          <span class="hidden sm:inline">Tic-Tac-Toe</span>
-          <span class="step-lock hidden">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="2" onclick="goToArcadeGame(2)" title="Game 2: Word Finder">
-          <span class="font-bold">2</span>
-          <span>🔍</span>
-          <span class="hidden sm:inline">Word Finder</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="3" onclick="goToArcadeGame(3)" title="Game 3: Balloons">
-          <span class="font-bold">3</span>
-          <span>🎈</span>
-          <span class="hidden sm:inline">Balloons</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="4" onclick="goToArcadeGame(4)" title="Game 4: Spin Wheel">
-          <span class="font-bold">4</span>
-          <span>🎡</span>
-          <span class="hidden sm:inline">Spin Wheel</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="5" onclick="goToArcadeGame(5)" title="Game 5: Mystery Box">
-          <span class="font-bold">5</span>
-          <span>🎁</span>
-          <span class="hidden sm:inline">Mystery Box</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="6" onclick="goToArcadeGame(6)" title="Game 6: Memory Match">
-          <span class="font-bold">6</span>
-          <span>🎴</span>
-          <span class="hidden sm:inline">Memory Match</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-        <button class="arcade-step-btn locked" data-game="7" onclick="goToArcadeGame(7)" title="Game 7: Heart Catcher">
-          <span class="font-bold">7</span>
-          <span>🦋</span>
-          <span class="hidden sm:inline">Heart Catcher</span>
-          <span class="step-lock">🔒</span>
-          <span class="step-check hidden">✓</span>
-        </button>
-      </nav>
     </div>
 
     <!-- 7 INDIVIDUAL GAME PAGES (ONE GAME PER PAGE) -->
@@ -3071,6 +2943,7 @@
       passcodeUniverse: ["depression buddy", "depressionbuddy", "lavi", "blue"],
       passcodeVault: ["silence", "yadav", "clarity", "truth"]
     };
+    window.state = state;
 
     function goToChapter(num) {
       if (num < 1 || num > totalChapters) return false;
@@ -3134,21 +3007,24 @@
     }
     window.goToChapter = goToChapter;
 
-    // Chapter modal menu
+    // Chapter modal menu (safely guarded)
     const chapterModal = document.getElementById("chapter-menu-modal");
     const btnChapterMenu = document.getElementById("btn-chapter-menu-toggle");
-    if (btnChapterMenu) {
+    const btnCloseChapterMenu = document.getElementById("btn-close-chapter-menu");
+    if (btnChapterMenu && chapterModal) {
       btnChapterMenu.addEventListener("click", () => {
         if (typeof sfx !== 'undefined') sfx.whoosh();
-        if (chapterModal) chapterModal.classList.remove("hidden");
+        chapterModal.classList.remove("hidden");
       });
     }
-    document.getElementById("btn-close-chapter-menu").addEventListener("click", () => {
-      if (typeof sfx !== 'undefined') sfx.tap();
-      chapterModal.classList.add("hidden");
-    });
+    if (btnCloseChapterMenu && chapterModal) {
+      btnCloseChapterMenu.addEventListener("click", () => {
+        if (typeof sfx !== 'undefined') sfx.tap();
+        chapterModal.classList.add("hidden");
+      });
+    }
     function closeChapterMenu() {
-      chapterModal.classList.add("hidden");
+      if (chapterModal) chapterModal.classList.add("hidden");
     }
 
     // Step from Page 1 to Page 2
