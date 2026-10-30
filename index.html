@@ -2651,12 +2651,12 @@
         </button>
 
         <p id="secret-vault-error" class="passcode-error hidden">
-          Incorrect passcode. Hint: "oggy" 🐱 (our favorite cartoon cat)
+          Incorrect passcode. Hint: <span id="secret-vault-error-hint">Not a real giant, but he has a special name</span>
         </p>
 
         <div
           class="pt-3 flex items-center justify-between text-xs text-iceBlue/80 border-t border-iceBlue/15 font-mono">
-          <span>Hint: <strong class="text-cyan-400 font-semibold">oggy</strong> 🐱</span>
+          <span>Hint: <strong id="secret-vault-hint-text" class="text-cyan-400 font-semibold">Not a real giant, but he has a special name</strong></span>
           <span class="text-xs text-cyan-300/80">Enter passcode to unlock</span>
         </div>
       </div>
@@ -3230,6 +3230,12 @@
           if (appData && appData.passwords) {
             if (appData.passwords.universe) state.passcodeUniverse = appData.passwords.universe;
             if (appData.passwords.vault) state.passcodeVault = appData.passwords.vault;
+            if (appData.passwords.vaultHint) {
+              const hintEl = document.getElementById("secret-vault-hint-text");
+              if (hintEl) hintEl.textContent = appData.passwords.vaultHint;
+              const errHintEl = document.getElementById("secret-vault-error-hint");
+              if (errHintEl) errHintEl.textContent = appData.passwords.vaultHint;
+            }
           }
         }
       } catch (err) {
