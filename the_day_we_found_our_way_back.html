@@ -843,7 +843,7 @@
               <span class="text-xs font-mono text-electricBlue uppercase tracking-wider block">Game 06 of 07 &bull; Page 6</span>
               <h3 class="font-serif text-2xl text-softWhite font-bold">Memory Match (20 Cards) 🎴</h3>
             </div>
-            <span class="text-xs text-iceBlue/70">Find the 10 matching sacred word pairs!</span>
+            <span class="text-xs text-iceBlue/70">Find the 10 matching glowing emoji pairs! ✨</span>
           </div>
 
           <!-- Live pair counter and progress bar -->
@@ -4824,24 +4824,24 @@
     });
 
     // =========================================================================
-    // GAME 6: MEMORY MATCH (20 CARDS) 🎴 - SACRED WORDS EDITION
+    // GAME 6: MEMORY MATCH (20 CARDS) 🎴 - GLOWING EMOJIS EDITION
     // =========================================================================
-    const memoryWords10 = [
-      { id: "word1", text: "Yadav", emoji: "🖤", color: "#93c5fd" },
-      { id: "word2", text: "Lavi", emoji: "💙", color: "#38bdf8" },
-      { id: "word3", text: "Kajal", emoji: "✨", color: "#fde047" },
-      { id: "word4", text: "October Theory", emoji: "🍂", color: "#fb923c" },
-      { id: "word5", text: "Depression Buddy", emoji: "🫂", color: "#a5b4fc" },
-      { id: "word6", text: "Lavanya", emoji: "🌸", color: "#f472b6" },
-      { id: "word7", text: "Kashish", emoji: "💫", color: "#c084fc" },
-      { id: "word8", text: "October 24", emoji: "🗓️", color: "#34d399" },
-      { id: "word9", text: "390 Days", emoji: "⏳", color: "#67e8f9" },
-      { id: "word10", text: "Midnight Talks", emoji: "🌙", color: "#cbd5e1" }
+    const memoryEmojis10 = [
+      { id: "emoji1", emoji: "🖤", name: "Black Heart", glow: "#93c5fd", glowSoft: "rgba(147, 197, 253, 0.5)" },
+      { id: "emoji2", emoji: "💙", name: "Blue Heart", glow: "#38bdf8", glowSoft: "rgba(56, 189, 248, 0.55)" },
+      { id: "emoji3", emoji: "✨", name: "Sparkles", glow: "#fde047", glowSoft: "rgba(253, 224, 71, 0.6)" },
+      { id: "emoji4", emoji: "🍂", name: "October Leaf", glow: "#fb923c", glowSoft: "rgba(251, 146, 60, 0.6)" },
+      { id: "emoji5", emoji: "🫂", name: "Warm Hug", glow: "#a5b4fc", glowSoft: "rgba(165, 180, 252, 0.6)" },
+      { id: "emoji6", emoji: "🌸", name: "Cherry Blossom", glow: "#f472b6", glowSoft: "rgba(244, 114, 182, 0.6)" },
+      { id: "emoji7", emoji: "🌙", name: "Crescent Moon", glow: "#e2e8f0", glowSoft: "rgba(226, 232, 240, 0.6)" },
+      { id: "emoji8", emoji: "🦋", name: "Butterfly", glow: "#67e8f9", glowSoft: "rgba(103, 232, 249, 0.6)" },
+      { id: "emoji9", emoji: "🧸", name: "Teddy Bear", glow: "#fcd34d", glowSoft: "rgba(252, 211, 77, 0.6)" },
+      { id: "emoji10", emoji: "♾️", name: "Infinity Bond", glow: "#34d399", glowSoft: "rgba(52, 211, 153, 0.6)" }
     ];
 
     function buildMemoryDeck() {
       const paired = [];
-      memoryWords10.forEach(item => {
+      memoryEmojis10.forEach(item => {
         paired.push({ ...item, uid: `${item.id}-a` });
         paired.push({ ...item, uid: `${item.id}-b` });
       });
@@ -4871,9 +4871,9 @@
             <span class="text-2xl select-none">💙</span>
             <span class="text-[9px] font-mono text-cyan-300/80 mt-1 uppercase font-bold tracking-wider select-none">LAVI</span>
           </div>
-          <div class="memory-card-front word-card-front">
-            <span class="word-card-emoji select-none">${item.emoji}</span>
-            <span class="word-card-text select-none" style="color: ${item.color || '#e0f2fe'}">${item.text}</span>
+          <div class="memory-card-front glowing-emoji-front" style="--card-glow: ${item.glow}; --card-glow-soft: ${item.glowSoft}">
+            <div class="emoji-halo"></div>
+            <span class="glowing-emoji select-none">${item.emoji}</span>
             <div class="matched-check-badge hidden">✓</div>
           </div>
         `;
@@ -4909,12 +4909,12 @@
               if (memoryPairsCount) memoryPairsCount.innerText = matchedPairs;
               if (memoryProgressFill) memoryProgressFill.style.width = `${matchedPairs * 10}%`;
 
-              showToast(`Matched: ${c1.item.text}! (${matchedPairs}/10) ✨`, "💙");
+              showToast(`Matched: ${c1.item.emoji} ${c1.item.name}! (${matchedPairs}/10) ✨`, c1.item.emoji);
 
               if (matchedPairs >= 10) {
                 state.gamesCompleted[6] = true;
                 updateArcadeProgress();
-                showToast("All 10 word pairs matched! Game 6 Won! 🎴", "🏆");
+                showToast("All 10 glowing emoji pairs matched! Game 6 Won! 🎴✨", "🏆");
                 setTimeout(() => {
                   showNextGameModal(6);
                 }, 900);
@@ -4945,7 +4945,7 @@
         if (memoryPairsCount) memoryPairsCount.innerText = "0";
         if (memoryProgressFill) memoryProgressFill.style.width = "0%";
         renderMemoryGrid20();
-        showToast("Word memory deck shuffled! 🎴", "🔄");
+        showToast("Glowing emoji deck shuffled! 🎴✨", "🔄");
       });
     }
 
