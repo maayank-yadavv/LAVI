@@ -53,8 +53,12 @@
   <!-- Inlined Critical Above-the-Fold Rules for Instant FCP & Softness -->
   <style>
     :root{--bg:#040814;--ice:#b5deff;--electric:#168bff;--soft:#f3f7ff;--navy:#07152b}
-    html{-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}
-    body{background-color:#040814;color:#f3f7ff;margin:0;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+    *{scrollbar-width:none!important;-ms-overflow-style:none!important}
+    html{scrollbar-width:none!important;-ms-overflow-style:none!important;-webkit-tap-highlight-color:transparent;scroll-behavior:smooth}
+    body{scrollbar-width:none!important;-ms-overflow-style:none!important;background-color:#040814;color:#f3f7ff;margin:0;font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;-webkit-tap-highlight-color:transparent}
+    ::-webkit-scrollbar,*::-webkit-scrollbar{width:0!important;height:0!important;display:none!important;background:transparent!important}
+    ::-webkit-scrollbar-track,*::-webkit-scrollbar-track{background:transparent!important}
+    ::-webkit-scrollbar-thumb,*::-webkit-scrollbar-thumb{background:transparent!important;border:none!important}
     .chapter-page{display:none}
     .chapter-page.active{display:block}
     #universe-stars-canvas{position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none}

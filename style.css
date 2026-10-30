@@ -73,6 +73,8 @@ html {
   -webkit-overflow-scrolling: touch;
   touch-action: manipulation;
   overscroll-behavior-y: none;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
 body {
@@ -85,6 +87,8 @@ body {
   overflow-x: hidden;
   position: relative;
   line-height: 1.6;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
 ::selection {
@@ -93,25 +97,29 @@ body {
   text-shadow: none;
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
+/* Hide Scrollbars Globally While Keeping Smooth Scrolling */
+* {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
 }
 
-::-webkit-scrollbar-track {
-  background: var(--color-void);
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+  background: transparent !important;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #0d284f;
-  border-radius: 4px;
-  border: 1px solid rgba(22, 139, 255, 0.35);
+::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+  background: transparent !important;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: var(--color-electric-blue);
-  box-shadow: var(--glow-sm);
+::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border: none !important;
 }
 
 /* --------------------------------------------------------------------------
