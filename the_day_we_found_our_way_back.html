@@ -4040,7 +4040,7 @@
       // Progression gating: Game 1 is always unlocked. Games 2..7 require previous game complete!
       if (gameNum > 1 && !state.gamesCompleted[gameNum - 1]) {
         const prevTitle = arcadeGameDetails[gameNum - 2].title;
-        showToast(`Win and clear Game ${gameNum - 1} (${prevTitle}) first to unlock this level! 🔒`, "🎮");
+        showToast(`Win and clear Game ${gameNum - 1} (${prevTitle}) first! (Tip: Tap 'Friendship' above to skip 🤫) 🔒`, "🎮");
         if (typeof sfx !== 'undefined') sfx.error();
         return false;
       }
@@ -4145,7 +4145,7 @@
     function askNextGamePrompt(gameNum) {
       if (!state.gamesCompleted[gameNum]) {
         const curr = arcadeGameDetails[gameNum - 1];
-        showToast(`You must win ${curr.title} first to unlock the next level! 🎮🔒`, "🔒");
+        showToast(`You must win ${curr.title} first to unlock next level! (Tip: Tap 'Friendship' above to skip 🤫) 🔒`, "🎮");
         if (typeof sfx !== 'undefined') sfx.error();
         return;
       }
@@ -4184,6 +4184,69 @@
       if (count >= 7 || pct >= 100) {
         showToast("Arcade score 100%! Ready to open the fancy envelope! 💌", "✨");
       }
+    }
+
+    // =========================================================================
+    // SECRET "FRIENDSHIP" SKIP TRIGGER (HIDDEN EASTER EGG TO SKIP GAMES)
+    // =========================================================================
+    function triggerSecretFriendshipSkip() {
+      // Find current active game or first incomplete game
+      let targetGame = currentArcadeGame || 1;
+
+      if (!state.universeUnlocked) {
+        state.universeUnlocked = true;
+      }
+
+      // If current game is already completed, find next incomplete game
+      if (state.gamesCompleted[targetGame]) {
+        const nextIncomplete = [1, 2, 3, 4, 5, 6, 7].find(g => !state.gamesCompleted[g]);
+        if (nextIncomplete) {
+          targetGame = nextIncomplete;
+          goToArcadeGame(targetGame);
+        } else {
+          showToast("All 7 Arcade games are already completed! 💌✨", "🏆");
+          showNextGameModal(7);
+          return;
+        }
+      }
+
+      // Mark current game complete
+      state.gamesCompleted[targetGame] = true;
+      updateArcadeProgress();
+
+      // Audio & celebration effects
+      if (typeof sfx !== 'undefined') {
+        if (typeof sfx.sparkle === 'function') sfx.sparkle();
+        else if (typeof sfx.success === 'function') sfx.success();
+      }
+
+      spawnCelebrationBurst(window.innerWidth / 2, window.innerHeight / 2);
+      for (let i = 0; i < 4; i++) {
+        setTimeout(() => spawnFloatingHeart(window.innerWidth / 2 + (Math.random() - 0.5) * 160, window.innerHeight / 2), i * 110);
+      }
+
+      const currDetails = arcadeGameDetails[targetGame - 1];
+      const gTitle = currDetails ? currDetails.title : `Game ${targetGame}`;
+      showToast(`🤫 Secret Friendship Skip! Level cleared: ${gTitle}! 💙✨`, "🎮");
+
+      // Show next game modal to prompt navigation to next level
+      setTimeout(() => {
+        showNextGameModal(targetGame);
+      }, 650);
+    }
+
+    const secretFriendshipTrigger = document.getElementById("secret-friendship-trigger");
+    if (secretFriendshipTrigger) {
+      secretFriendshipTrigger.addEventListener("click", (e) => {
+        e.preventDefault();
+        triggerSecretFriendshipSkip();
+      });
+      secretFriendshipTrigger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          triggerSecretFriendshipSkip();
+        }
+      });
     }
 
     // =========================================================================

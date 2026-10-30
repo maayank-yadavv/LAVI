@@ -1259,6 +1259,24 @@ h4,
   margin-bottom: 2.75rem;
 }
 
+/* Secret Friendship Skip Trigger (Hidden Easter Egg) */
+#secret-friendship-trigger {
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.25s ease, transform 0.2s ease, text-shadow 0.25s ease;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#secret-friendship-trigger:hover {
+  color: var(--color-cyan-glow, #38bdf8);
+  text-shadow: 0 0 16px rgba(56, 189, 248, 0.75), 0 0 28px rgba(56, 189, 248, 0.4);
+}
+
+#secret-friendship-trigger:active {
+  transform: scale(0.95);
+}
+
 .score-progress-track {
   max-width: 440px;
   margin: 1.5rem auto 0.75rem auto;
