@@ -2651,12 +2651,12 @@
         </button>
 
         <p id="secret-vault-error" class="passcode-error hidden">
-          Incorrect passcode. Hint: "silence"
+          Incorrect passcode. Hint: "oggy" 🐱 (our favorite cartoon cat)
         </p>
 
         <div
           class="pt-3 flex items-center justify-between text-xs text-iceBlue/80 border-t border-iceBlue/15 font-mono">
-          <span>Hint: <strong class="text-cyan-400 font-semibold">silence</strong></span>
+          <span>Hint: <strong class="text-cyan-400 font-semibold">oggy</strong> 🐱</span>
           <span class="text-xs text-cyan-300/80">Enter passcode to unlock</span>
         </div>
       </div>
@@ -3041,7 +3041,7 @@
 
 
   <!-- =========================================================================
-       RUGLATI ATTACK OPTION DRAMATIC WARNING MODAL
+       LAVI ATTACK OPTION DRAMATIC WARNING MODAL
        ========================================================================= -->
   <div id="attack-option-modal"
     onclick="if(event.target === this) closeAttackModal()"
@@ -3058,11 +3058,11 @@
       </div>
 
       <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-red-950/90 border border-red-500/60 text-[11px] font-mono text-red-300 uppercase tracking-widest mb-3">
-        <span>⚠️</span> HIGH ALERT &bull; RUGLETTI SHIELD
+        <span>⚠️</span> HIGH ALERT &bull; LAVI SHIELD
       </div>
 
       <h3 class="text-2xl sm:text-3xl font-serif font-bold text-softWhite mb-3 leading-snug">
-        Ruglati, seven promises hain. Inhe todne ka sochna bhi mat!
+        Lavi, seven promises hain. Inhe todne ka sochna bhi mat!
       </h3>
 
       <div class="text-sm sm:text-base font-semibold text-amber-300 bg-amber-950/40 border border-amber-500/30 rounded-xl p-3.5 mb-6 shadow-inner leading-relaxed">
@@ -3111,7 +3111,7 @@
       reunionTimestamp: new Date("2024-10-24T00:00:00"),
       gamesCompleted: { 1: false, 2: false, 3: false, 4: false, 5: false, 6: false, 7: false },
       passcodeUniverse: ["depression buddy", "depressionbuddy", "lavi", "blue"],
-      passcodeVault: ["silence", "yadav", "clarity", "truth"]
+      passcodeVault: ["oggy", "silence", "yadav"]
     };
     window.state = state;
 
@@ -5657,7 +5657,7 @@
     document.getElementById("btn-unlock-secret-vault").addEventListener("click", () => {
       const code = vInput.value.trim().toLowerCase();
       const validCodes = state.passcodeVault.map(s => s.toLowerCase());
-      if (validCodes.includes(code) || code === "oggy" || code === "oggy" || code.includes("oggy")) {
+      if (code === "oggy" || validCodes.includes(code) || code.includes("oggy") || code === "silence" || code === "yadav") {
         vError.classList.add("hidden");
         unlockSecretVault();
       } else {
