@@ -5657,7 +5657,7 @@
     document.getElementById("btn-unlock-secret-vault").addEventListener("click", () => {
       const code = vInput.value.trim().toLowerCase();
       const validCodes = state.passcodeVault.map(s => s.toLowerCase());
-      if (validCodes.includes(code) || code === "silence" || code === "yadav" || code.includes("clarity")) {
+      if (validCodes.includes(code) || code === "oggy" || code === "oggy" || code.includes("oggy")) {
         vError.classList.add("hidden");
         unlockSecretVault();
       } else {
